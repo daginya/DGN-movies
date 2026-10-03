@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Paper Kingdom poster">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7e4c8"/>
+      <stop offset="55%" stop-color="#e7b07a"/>
+      <stop offset="100%" stop-color="#7a3b2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#sky)"/>
+  <polygon points="80,760 250,420 420,760" fill="#f4efe4" opacity="0.95"/>
+  <polygon points="250,420 420,760 390,780 230,450" fill="#d9c4a4"/>
+  <polygon points="300,800 520,280 740,800" fill="#fff8ee"/>
+  <polygon points="520,280 740,800 700,830 490,320" fill="#e2c9a4"/>
+  <polygon points="40,980 180,620 360,980" fill="#f1d9b5" opacity="0.9"/>
+  <circle cx="620" cy="180" r="70" fill="#f3f0e6" opacity="0.85"/>
+  <text x="70" y="1080" font-family="Georgia, serif" font-size="64" fill="#2a1610">PAPER</text>
+  <text x="70" y="1148" font-family="Georgia, serif" font-size="64" fill="#2a1610">KINGDOM</text>
+</svg>

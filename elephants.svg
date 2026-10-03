@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Elephants Dream poster">
+  <rect width="800" height="1200" fill="#22162a"/>
+  <circle cx="400" cy="480" r="220" fill="#6b3d8a"/>
+  <circle cx="400" cy="480" r="90" fill="#f0c85a"/>
+  <rect x="370" y="700" width="60" height="220" fill="#f0c85a"/>
+  <text x="70" y="1040" font-family="Georgia, serif" font-size="46" fill="#f4ead8">ELEPHANTS</text>
+  <text x="70" y="1108" font-family="Georgia, serif" font-size="46" fill="#f4ead8">DREAM</text>
+</svg>

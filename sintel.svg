@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Sintel poster">
+  <rect width="800" height="1200" fill="#1a1418"/>
+  <polygon points="0,1200 0,640 800,420 800,1200" fill="#3a2a28"/>
+  <polygon points="0,900 280,520 560,900" fill="#6b3a32"/>
+  <circle cx="560" cy="220" r="80" fill="#e8c4a0"/>
+  <path d="M120 980 C 260 760, 540 760, 700 980" fill="none" stroke="#e8c4a0" stroke-width="10"/>
+  <text x="80" y="1100" font-family="Georgia, serif" font-size="92" fill="#f3e6d4">SINTEL</text>
+</svg>

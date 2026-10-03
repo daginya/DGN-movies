@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Tears of Steel poster">
+  <rect width="800" height="1200" fill="#11151c"/>
+  <rect x="0" y="640" width="800" height="200" fill="#2a3140"/>
+  <polygon points="80,640 180,420 280,640" fill="#8a93a6"/>
+  <rect x="430" y="360" width="220" height="280" fill="#c24b3a"/>
+  <circle cx="540" cy="220" r="36" fill="#e8d2a0"/>
+  <text x="70" y="980" font-family="Georgia, serif" font-size="52" fill="#f0e6d4">TEARS OF</text>
+  <text x="70" y="1050" font-family="Georgia, serif" font-size="52" fill="#f0e6d4">STEEL</text>
+</svg>

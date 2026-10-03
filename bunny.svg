@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Big Buck Bunny poster">
+  <rect width="800" height="1200" fill="#8ec36a"/>
+  <rect x="0" y="820" width="800" height="380" fill="#5d8f3e"/>
+  <circle cx="400" cy="520" r="180" fill="#d9e27a"/>
+  <ellipse cx="300" cy="250" rx="50" ry="160" fill="#d9e27a"/>
+  <ellipse cx="500" cy="250" rx="50" ry="160" fill="#d9e27a"/>
+  <circle cx="350" cy="500" r="18" fill="#243016"/>
+  <circle cx="450" cy="500" r="18" fill="#243016"/>
+  <ellipse cx="400" cy="560" rx="40" ry="24" fill="#c07040"/>
+  <text x="70" y="1040" font-family="Georgia, serif" font-size="54" fill="#243016">BIG BUCK</text>
+  <text x="70" y="1110" font-family="Georgia, serif" font-size="54" fill="#243016">BUNNY</text>
+</svg>

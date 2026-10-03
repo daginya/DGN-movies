@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Copper Sunday poster">
+  <rect width="800" height="1200" fill="#1c120c"/>
+  <rect x="0" y="620" width="800" height="580" fill="#b15a2a"/>
+  <rect x="0" y="620" width="800" height="40" fill="#e0a15a"/>
+  <polygon points="0,620 180,430 360,620" fill="#6b3a22"/>
+  <rect x="470" y="360" width="90" height="260" fill="#3a2418"/>
+  <rect x="490" y="250" width="50" height="110" fill="#2a1810"/>
+  <circle cx="140" cy="180" r="90" fill="#f0c27a"/>
+  <text x="70" y="980" font-family="Georgia, serif" font-size="58" fill="#1c120c">COPPER</text>
+  <text x="70" y="1050" font-family="Georgia, serif" font-size="58" fill="#1c120c">SUNDAY</text>
+</svg>

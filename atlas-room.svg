@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="The Atlas Room poster">
+  <rect width="800" height="1200" fill="#0e1a24"/>
+  <circle cx="400" cy="460" r="260" fill="none" stroke="#c9a36a" stroke-width="8"/>
+  <ellipse cx="400" cy="460" rx="90" ry="260" fill="none" stroke="#c9a36a" stroke-width="3"/>
+  <ellipse cx="400" cy="460" rx="180" ry="260" fill="none" stroke="#c9a36a" stroke-width="2"/>
+  <line x1="140" y1="460" x2="660" y2="460" stroke="#c9a36a" stroke-width="3"/>
+  <line x1="400" y1="200" x2="400" y2="720" stroke="#c9a36a" stroke-width="3"/>
+  <rect x="90" y="860" width="620" height="18" fill="#c9a36a"/>
+  <text x="90" y="980" font-family="Georgia, serif" font-size="52" fill="#e8dcc6">THE ATLAS</text>
+  <text x="90" y="1050" font-family="Georgia, serif" font-size="52" fill="#e8dcc6">ROOM</text>
+</svg>

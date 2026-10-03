@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Northwire Signal poster">
+  <rect width="800" height="1200" fill="#0b141c"/>
+  <rect x="0" y="780" width="800" height="420" fill="#d7e4ee"/>
+  <polygon points="0,780 220,560 480,780" fill="#8aa4b5"/>
+  <polygon points="300,780 620,420 800,780" fill="#b9c9d4"/>
+  <line x1="160" y1="780" x2="160" y2="220" stroke="#e8f2f8" stroke-width="8"/>
+  <line x1="160" y1="260" x2="280" y2="200" stroke="#e8f2f8" stroke-width="4"/>
+  <line x1="160" y1="320" x2="40" y2="250" stroke="#e8f2f8" stroke-width="4"/>
+  <circle cx="640" cy="160" r="48" fill="#f5f7fa"/>
+  <text x="70" y="980" font-family="Georgia, serif" font-size="50" fill="#0b141c">NORTHWIRE</text>
+  <text x="70" y="1048" font-family="Georgia, serif" font-size="50" fill="#0b141c">SIGNAL</text>
+</svg>
