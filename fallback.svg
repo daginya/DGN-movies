@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="DGN poster">
-  <rect width="800" height="1200" fill="#14110d"/>
-  <rect x="60" y="60" width="680" height="1080" fill="none" stroke="#d4a853" stroke-width="4"/>
-  <text x="400" y="600" text-anchor="middle" font-family="Georgia, serif" font-size="96" fill="#d4a853">DGN</text>
+  <rect width="800" height="1200" fill="#f7f3fc"/>
+  <rect x="60" y="60" width="680" height="1080" fill="none" stroke="#7c3aed" stroke-width="4"/>
+  <text x="400" y="600" text-anchor="middle" font-family="Georgia, serif" font-size="96" fill="#7c3aed">DGN</text>
 </svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="The Batman poster">
+  <defs>
+    <linearGradient id="tb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0b10" /><stop offset="65%" stop-color="#2a0c11" /><stop offset="100%" stop-color="#7c1220" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#tb)" />
+  <g stroke="#e05252" stroke-width="2" opacity="0.35">
+    <line x1="140" y1="120" x2="90" y2="380" /><line x1="300" y1="80" x2="270" y2="330" />
+    <line x1="520" y1="90" x2="560" y2="340" /><line x1="680" y1="130" x2="730" y2="390" />
+  </g>
+  <path d="M400 300 L520 420 L470 470 L560 560 L400 660 L240 560 L330 470 L280 420 Z" fill="#c22434" opacity="0.9" />
+  <text x="400" y="1010" text-anchor="middle" font-family="Georgia, serif" font-size="86" letter-spacing="12" fill="#f6e3e3">BATMAN</text>
+  <text x="400" y="1075" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="16" fill="#e05252">THE</text>
+</svg>

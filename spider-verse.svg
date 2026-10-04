@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Across the Spider-Verse poster">
+  <defs>
+    <linearGradient id="sv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b0b3a" /><stop offset="50%" stop-color="#7c1fb0" /><stop offset="100%" stop-color="#e8358a" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#sv)" />
+  <circle cx="400" cy="430" r="230" fill="none" stroke="#ffd6f2" stroke-width="5" opacity="0.75" />
+  <circle cx="400" cy="430" r="160" fill="none" stroke="#6ef2ff" stroke-width="4" opacity="0.7" />
+  <path d="M400 200 L470 430 L400 660 L330 430 Z" fill="#ffd6f2" opacity="0.85" />
+  <path d="M180 430 H620" stroke="#6ef2ff" stroke-width="4" opacity="0.6" />
+  <text x="400" y="1010" text-anchor="middle" font-family="Georgia, serif" font-size="66" letter-spacing="6" fill="#ffe8f8">SPIDER-VERSE</text>
+  <text x="400" y="1072" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="10" fill="#6ef2ff">ACROSS THE</text>
+</svg>

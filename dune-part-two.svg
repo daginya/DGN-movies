@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="Dune Part Two poster">
+  <defs>
+    <linearGradient id="dq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b1206" /><stop offset="55%" stop-color="#b4622a" /><stop offset="100%" stop-color="#e8a45c" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#dq)" />
+  <circle cx="400" cy="380" r="170" fill="#f6d9a8" opacity="0.9" />
+  <path d="M0 760 Q 200 640 400 720 T 800 690 V1200 H0 Z" fill="#7c3c17" />
+  <path d="M0 880 Q 260 780 520 860 T 800 840 V1200 H0 Z" fill="#4a2109" />
+  <text x="400" y="1035" text-anchor="middle" font-family="Georgia, serif" font-size="88" letter-spacing="12" fill="#fbe9c9">DUNE</text>
+  <text x="400" y="1110" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="34" letter-spacing="14" fill="#f6d9a8">PART TWO</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" role="img" aria-label="John Wick Chapter 4 poster">
+  <defs>
+    <linearGradient id="jw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#160407" /><stop offset="60%" stop-color="#6b0f1b" /><stop offset="100%" stop-color="#c22233" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#jw)" />
+  <path d="M400 190 L640 470 L400 750 L160 470 Z" fill="none" stroke="#f2c9c9" stroke-width="5" opacity="0.75" />
+  <path d="M400 300 L560 470 L400 640 L240 470 Z" fill="#f2c9c9" opacity="0.18" />
+  <g stroke="#f2c9c9" stroke-width="2" opacity="0.35">
+    <line x1="120" y1="200" x2="120" y2="820" /><line x1="680" y1="200" x2="680" y2="820" />
+  </g>
+  <text x="400" y="1010" text-anchor="middle" font-family="Georgia, serif" font-size="70" letter-spacing="10" fill="#ffe9e9">JOHN WICK</text>
+  <text x="400" y="1075" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="14" fill="#f2a3a3">CHAPTER 4</text>
+</svg>
