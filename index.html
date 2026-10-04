@@ -3,56 +3,62 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DGN Movies — every film, every quality</title>
+    <title>DGN Movies — Stream Movies & Shows Free</title>
     <meta
       name="description"
-      content="DGN Movies: a catalog of films you can watch in 4K, 2100p, 1080p, 720p, 480p and 360p across multiple streaming servers."
+      content="Stream movies free on DGN. Watch in 4K, 2100p, 1080p, 720p, 480p and 360p across multiple servers."
     />
+    <meta name="theme-color" content="#95FF50" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrap header-inner">
+    <div class="nav-shell">
+      <nav class="nav">
         <a class="brand" href="#/">
-          <span class="brand-badge">DGN</span>
-          <span class="brand-text">
-            <strong>DGN</strong>
-            <small>Movies</small>
-          </span>
+          <span class="brand-mark">DGN</span>
+          <span class="brand-name">DGN</span>
         </a>
-        <nav class="nav">
-          <a href="#/">Home</a>
-          <a href="#/catalog">Catalog</a>
-          <a href="#/services">Services</a>
-          <a href="#/watchlist">Watchlist</a>
-          <a href="import.html">+ Movie</a>
-        </nav>
-        <input id="search" class="search" type="search" placeholder="Search titles, directors…" />
-      </div>
-    </header>
+        <div class="nav-links" id="navlinks">
+          <a href="#/" data-route="/">Home</a>
+          <a href="#/catalog" data-route="/catalog">Movies</a>
+          <a href="#/services" data-route="/services">Platforms</a>
+          <a href="#/watchlist" data-route="/watchlist">My List</a>
+        </div>
+        <label class="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M20 20l-3.5-3.5"></path>
+          </svg>
+          <input id="search" type="search" placeholder="Search movies, directors…" />
+        </label>
+        <a class="nav-cta" href="import.html" data-route="/import">
+          <span class="plus">+</span> Movie
+        </a>
+      </nav>
+    </div>
 
     <main id="app" class="wrap"></main>
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <div>
-          <p class="footer-brand">DGN</p>
+          <p class="footer-brand">DGN MOVIES</p>
           <p class="muted">
-            A catalog of films with multiple streaming servers and every quality tier — 4K, 2100p,
-            1080p, 720p, 480p and 360p.
+            Stream movies and shows free — every title on multiple servers, in 4K, 2100p, 1080p,
+            720p, 480p and 360p.
           </p>
         </div>
         <div class="footer-links">
-          <a href="#/catalog">Catalog</a>
-          <a href="#/services">Services</a>
-          <a href="#/watchlist">Watchlist</a>
-          <a href="import.html">Import a movie</a>
+          <a href="#/catalog">Movies</a>
+          <a href="#/services">Platforms</a>
+          <a href="#/watchlist">My List</a>
+          <a href="import.html">+ Movie</a>
         </div>
       </div>
     </footer>

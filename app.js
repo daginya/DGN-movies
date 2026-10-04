@@ -1,8 +1,9 @@
-/* DGN Movies — static single-page app. No build step, no server, no database. */
+/* DGN Movies — streaming interface. Static, no build step, no server. */
 (function () {
   const DATA = window.DGN_DATA || { movies: [], services: [] };
   const app = document.getElementById("app");
   const searchBox = document.getElementById("search");
+  const navLinks = document.getElementById("navlinks");
 
   const QUALITIES = ["4K", "2100p", "1080p", "720p", "480p", "360p"];
   const WATCH_KEY = "dgn_watchlist";
@@ -10,17 +11,13 @@
   let query = "";
   let filters = { genre: "", year: "", quality: "" };
   let playerState = { quality: "All", index: 0 };
+  let slide = 0;
+  let timer = null;
 
-  /* ---------- helpers ---------- */
+  /* ---------------- helpers ---------------- */
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"']/g, function (char) {
-      return {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;",
-      }[char];
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char];
     });
   }
 
@@ -75,12 +72,29 @@
     return Object.keys(set).sort().reverse();
   }
 
-  function qualityOrder(quality) {
+  function qualityRank(quality) {
     const at = QUALITIES.indexOf(quality);
     return at === -1 ? QUALITIES.length : at;
   }
 
-  /* ---------- pieces ---------- */
+  function hasQuality(movie, quality) {
+    return movie.links.some(function (link) {
+      return link.quality === quality;
+    });
+  }
+
+  function bestQuality(movie) {
+    const list = movie.links
+      .map(function (link) {
+        return link.quality;
+      })
+      .sort(function (a, b) {
+        return qualityRank(a) - qualityRank(b);
+      });
+    return list[0] || "1080p";
+  }
+
+  /* ---------------- pieces ---------------- */
   function card(movie) {
     return (
       '<a class="card" href="#/movie/' +
@@ -90,24 +104,38 @@
       esc(movie.posterUrl) +
       '" alt="' +
       esc(movie.title) +
-      ' poster" loading="lazy" />' +
-      '<div class="card-overlay"></div>' +
-      '<div class="badges"><span class="badge">' +
+      '" loading="lazy" />' +
+      '<div class="badges"><span class="badge lime">' +
+      esc(bestQuality(movie)) +
+      '</span><span class="badge">' +
       movie.score.toFixed(1) +
-      '</span><span class="badge dark">' +
-      movie.links.length +
-      " servers</span></div>" +
-      '<div class="card-body"><h3>' +
+      "</span></div>" +
+      '<div class="card-hover"><div class="play">▶</div><strong>' +
       esc(movie.title) +
-      "</h3><p>" +
+      "</strong><span>" +
       movie.year +
       " · " +
       runtime(movie.runtimeMinutes) +
-      "</p></div></a>"
+      " · " +
+      movie.links.length +
+      " servers</span></div></a>"
     );
   }
 
-  function serviceCard(service) {
+  function row(title, movies, moreHref) {
+    if (!movies.length) return "";
+    return (
+      '<section class="section"><div class="section-head"><h2>' +
+      esc(title) +
+      "</h2>" +
+      (moreHref ? '<a class="more" href="' + moreHref + '">See all ›</a>' : "") +
+      '</div><div class="row">' +
+      movies.map(card).join("") +
+      "</div></section>"
+    );
+  }
+
+  function providerTile(service) {
     const initials = service.name
       .replace(/^The\s+/i, "")
       .split(/[\s+]+/)
@@ -118,90 +146,122 @@
       .join("")
       .toUpperCase();
     return (
-      '<a class="service" href="' +
+      '<a class="provider" href="' +
       esc(service.url) +
       '" target="_blank" rel="noreferrer">' +
-      '<div class="service-dot" style="background:' +
+      '<div class="dot" style="background:' +
       esc(service.accent) +
       '">' +
       esc(initials) +
-      "</div>" +
-      "<h3>" +
+      "</div><strong>" +
       esc(service.name) +
-      '</h3><p class="cat">' +
+      "</strong><span>" +
       esc(service.category) +
-      "</p><p>" +
-      esc(service.tagline) +
-      '</p><p class="open">Open ↗</p></a>'
+      "</span></a>"
     );
   }
 
-  function sectionHead(kicker, title, note) {
-    return (
-      '<div class="section-head"><div><p class="eyebrow">' +
-      esc(kicker) +
-      "</p><h2>" +
-      esc(title) +
-      "</h2></div>" +
-      (note ? '<p class="muted">' + esc(note) + "</p>" : "") +
-      "</div>"
-    );
+  /* ---------------- pages ---------------- */
+  function heroSlides(movies) {
+    return movies
+      .map(function (movie, index) {
+        return (
+          '<div class="hero-slide' +
+          (index === slide ? " on" : "") +
+          '">' +
+          '<img class="hero-bg" src="' +
+          esc(movie.backdropUrl) +
+          '" alt="" />' +
+          '<div class="hero-scrim"></div>' +
+          '<div class="hero-body"><div>' +
+          '<span class="tag-pill">▶ Featured · ' +
+          esc(bestQuality(movie)) +
+          "</span>" +
+          "<h1>" +
+          esc(movie.title) +
+          '</h1><p class="tagline">' +
+          esc(movie.tagline) +
+          '</p><div class="meta-row">' +
+          '<span class="meta-chip">' +
+          movie.year +
+          '</span><span class="meta-chip">' +
+          esc(movie.contentRating) +
+          '</span><span class="meta-chip">' +
+          runtime(movie.runtimeMinutes) +
+          '</span><span class="meta-chip">★ ' +
+          movie.score.toFixed(1) +
+          "</span>" +
+          movie.genres
+            .slice(0, 2)
+            .map(function (genre) {
+              return '<span class="meta-chip">' + esc(genre) + "</span>";
+            })
+            .join("") +
+          '<span class="meta-chip q">' +
+          movie.links.length +
+          " servers</span></div>" +
+          '<div class="btn-row"><a class="btn btn-accent" href="#/movie/' +
+          esc(movie.slug) +
+          '">▶ Watch Now</a>' +
+          '<a class="btn btn-glass" href="#/movie/' +
+          esc(movie.slug) +
+          '">More Info</a></div>' +
+          "</div></div></div>"
+        );
+      })
+      .join("");
   }
 
-  /* ---------- pages ---------- */
   function homePage() {
-    const hero = DATA.movies.filter(function (movie) {
-      return movie.featured;
-    })[0] || DATA.movies[0];
-    if (!hero) return '<p class="empty">No films yet.</p>';
+    const featured = DATA.movies.filter(function (movie) {
+      return movie.featured || movie.trending;
+    }).slice(0, 5);
+    const slides = featured.length ? featured : DATA.movies.slice(0, 5);
 
     const trending = DATA.movies.filter(function (movie) {
       return movie.trending;
     });
+    const newest = DATA.movies.slice().sort(function (a, b) {
+      return b.year - a.year;
+    });
+    const top = DATA.movies.slice().sort(function (a, b) {
+      return b.score - a.score;
+    });
+    const ultra = DATA.movies.filter(function (movie) {
+      return hasQuality(movie, "4K");
+    });
 
     return (
       '<section class="hero">' +
-      '<img class="hero-bg" src="' +
-      esc(hero.backdropUrl) +
-      '" alt="" />' +
-      '<div class="hero-scrim"></div>' +
-      '<div class="hero-body">' +
-      '<p class="eyebrow">Now streaming on ' +
-      hero.links.length +
-      " servers</p>" +
-      "<h1>" +
-      esc(hero.title) +
-      '</h1><p class="tagline">' +
-      esc(hero.tagline) +
-      '</p><div class="meta"><span>' +
-      hero.year +
-      "</span><span>" +
-      esc(hero.contentRating) +
-      "</span><span>" +
-      runtime(hero.runtimeMinutes) +
-      "</span><span>Score " +
-      hero.score.toFixed(1) +
-      "</span><span>" +
-      esc(hero.genres.join(" · ")) +
-      '</span></div><div class="hero-actions">' +
-      '<a class="btn btn-light" href="#/movie/' +
-      esc(hero.slug) +
-      '">Watch now</a>' +
-      '<a class="btn btn-ghost" href="#/catalog">Browse catalog</a>' +
-      "</div></div></section>" +
-      '<section class="section">' +
-      sectionHead("This week", "Trending across the grid") +
-      '<div class="rail">' +
-      trending.map(card).join("") +
+      heroSlides(slides) +
+      '<div class="dots">' +
+      slides
+        .map(function (movie, index) {
+          return (
+            '<button data-action="slide" data-value="' +
+            index +
+            '" class="' +
+            (index === slide ? "on" : "") +
+            '" aria-label="Slide ' +
+            (index + 1) +
+            '"></button>'
+          );
+        })
+        .join("") +
       "</div></section>" +
-      '<section class="section" id="services">' +
-      sectionHead("Beyond DGN", "Browse every service", DATA.services.length + " services") +
-      '<div class="services">' +
-      DATA.services.map(serviceCard).join("") +
+
+      '<section class="section"><div class="section-head"><h2>Watch on your favorite platforms</h2>' +
+      '<a class="more" href="#/services">All platforms ›</a></div><div class="providers">' +
+      DATA.services.map(providerTile).join("") +
       "</div></section>" +
-      '<section class="section">' +
-      sectionHead("The full house", "All titles", DATA.movies.length + " films") +
-      '<div class="grid">' +
+
+      row("Trending Now", trending, "#/catalog") +
+      row("New Releases", newest.slice(0, 12), "#/catalog") +
+      row("Top Rated", top.slice(0, 12), "#/catalog") +
+      row("In 4K Ultra HD", ultra, "#/catalog") +
+
+      '<section class="section"><div class="section-head"><h2>Everything on DGN</h2>' +
+      '<a class="more" href="#/catalog">Browse ›</a></div><div class="grid">' +
       DATA.movies.map(card).join("") +
       "</div></section>"
     );
@@ -221,63 +281,66 @@
       if (query && haystack.indexOf(query.toLowerCase()) === -1) return false;
       if (filters.genre && movie.genres.indexOf(filters.genre) === -1) return false;
       if (filters.year && String(movie.year) !== filters.year) return false;
-      if (filters.quality) {
-        const has = movie.links.some(function (link) {
-          return link.quality === filters.quality;
-        });
-        if (!has) return false;
-      }
+      if (filters.quality && !hasQuality(movie, filters.quality)) return false;
       return true;
     });
 
-    function chip(label, active, action, value) {
+    function options(values, selected, label) {
       return (
-        '<button class="chip' +
-        (active ? " on" : "") +
-        '" data-action="' +
-        action +
-        '" data-value="' +
-        esc(value) +
-        '">' +
+        '<option value="">' +
         esc(label) +
-        "</button>"
+        "</option>" +
+        values
+          .map(function (value) {
+            return (
+              '<option value="' +
+              esc(value) +
+              '"' +
+              (String(selected) === String(value) ? " selected" : "") +
+              ">" +
+              esc(value) +
+              "</option>"
+            );
+          })
+          .join("")
       );
     }
 
     return (
-      '<section class="section" style="margin-top:2.5rem">' +
-      '<p class="eyebrow">Catalog</p><h2>Every title, every mirror</h2>' +
-      '<p class="muted">Filter by genre, year or quality — then pick the server that streams fastest.</p>' +
-      '<div class="chips">' +
-      chip("All genres", !filters.genre, "genre", "") +
-      allGenres()
-        .map(function (genre) {
-          return chip(genre, filters.genre === genre, "genre", genre);
-        })
-        .join("") +
-      "</div>" +
-      '<div class="chips">' +
-      chip("All years", !filters.year, "year", "") +
-      allYears()
-        .map(function (year) {
-          return chip(year, filters.year === year, "year", year);
-        })
-        .join("") +
-      "</div>" +
-      '<div class="chips">' +
-      chip("All qualities", !filters.quality, "quality", "") +
-      QUALITIES.map(function (quality) {
-        return chip(quality, filters.quality === quality, "quality", quality);
-      }).join("") +
-      "</div>" +
-      '<p class="muted">' +
+      '<section class="section" style="margin-top:2.25rem">' +
+      '<div class="section-head"><h2 style="font-size:1.85rem">Movies</h2>' +
+      '<span class="muted">' +
       results.length +
       " title" +
       (results.length === 1 ? "" : "s") +
-      (query ? " for “" + esc(query) + "”" : "") +
-      "</p>" +
+      "</span></div>" +
+      '<div class="filter-bar">' +
+      '<select data-action="filter" data-value="genre">' +
+      options(allGenres(), filters.genre, "All genres") +
+      "</select>" +
+      '<select data-action="filter" data-value="year">' +
+      options(allYears(), filters.year, "All years") +
+      "</select>" +
+      '<select data-action="filter" data-value="quality">' +
+      options(QUALITIES, filters.quality, "All qualities") +
+      "</select>" +
+      '<div class="chips" style="margin-left:auto">' +
+      ["4K", "2100p", "1080p", "720p", "480p", "360p"]
+        .map(function (quality) {
+          return (
+            '<button class="chip' +
+            (filters.quality === quality ? " on" : "") +
+            '" data-action="quality" data-value="' +
+            quality +
+            '">' +
+            quality +
+            "</button>"
+          );
+        })
+        .join("") +
+      "</div></div>" +
       (results.length
-        ? '<div class="grid" style="margin-top:1.25rem">' + results.map(card).join("") + "</div>"
+        ? '<div class="grid">' + results.map(card).join("") + "</div>"
         : '<p class="empty">No titles match those filters.</p>') +
       "</section>"
     );
@@ -285,16 +348,18 @@
 
   function moviePage(slug) {
     const movie = bySlug(slug);
-    if (!movie) return '<p class="empty">That reel is missing. <a href="#/catalog">Back to catalog</a></p>';
+    if (!movie)
+      return '<p class="empty">That title is missing. <a href="#/catalog" style="color:#95ff50">Back to movies</a></p>';
 
     const links = movie.links.slice().sort(function (a, b) {
-      return qualityOrder(a.quality) - qualityOrder(b.quality) || a.server.latencyMs - b.server.latencyMs;
+      return (
+        qualityRank(a.quality) - qualityRank(b.quality) ||
+        a.server.latencyMs - b.server.latencyMs
+      );
     });
 
     const qualities = QUALITIES.filter(function (quality) {
-      return links.some(function (link) {
-        return link.quality === quality;
-      });
+      return hasQuality(movie, quality);
     });
 
     const visible =
@@ -308,7 +373,7 @@
 
     const qualityChips =
       qualities.length > 1
-        ? '<div class="chips"><span class="eyebrow" style="margin:0;align-self:center">Quality</span>' +
+        ? '<div class="chips" style="margin:1rem 0">' +
           ["All"].concat(qualities)
             .map(function (quality) {
               return (
@@ -325,33 +390,6 @@
           "</div>"
         : "";
 
-    const servers = visible
-      .map(function (link) {
-        const on = current && link === current;
-        return (
-          '<button class="server' +
-          (on ? " on" : "") +
-          '" data-action="server" data-value="' +
-          esc(link.server.name + "|" + link.quality + "|" + link.fileSize) +
-          '">' +
-          '<div class="top"><span class="name"><span class="dot" style="background:' +
-          esc(link.server.accent) +
-          '"></span>' +
-          esc(link.server.name) +
-          '</span><span class="q">' +
-          esc(link.quality) +
-          "</span></div>" +
-          '<p class="sub">' +
-          esc(link.language) +
-          " · " +
-          esc(link.fileSize) +
-          " · " +
-          link.server.latencyMs +
-          "ms</p></button>"
-        );
-      })
-      .join("");
-
     return (
       '<section class="detail-hero">' +
       '<img class="hero-bg" src="' +
@@ -361,56 +399,77 @@
       esc(movie.posterUrl) +
       '" alt="' +
       esc(movie.title) +
-      ' poster" />' +
-      "<div><p class=\"eyebrow\">" +
-      esc(movie.country) +
-      " · " +
-      esc(movie.director) +
-      "</p><h1>" +
+      ' poster" /><div>' +
+      '<span class="tag-pill">' +
+      esc(movie.genres.join(" · ")) +
+      "</span>" +
+      "<h1>" +
       esc(movie.title) +
       '</h1><p class="tagline">' +
       esc(movie.tagline) +
-      '</p><div class="meta"><span>' +
+      '</p><div class="meta-row">' +
+      '<span class="meta-chip">' +
       movie.year +
-      "</span><span>" +
+      '</span><span class="meta-chip">' +
       esc(movie.contentRating) +
-      "</span><span>" +
+      '</span><span class="meta-chip">' +
       runtime(movie.runtimeMinutes) +
-      "</span><span>" +
+      '</span><span class="meta-chip">★ ' +
       movie.score.toFixed(1) +
-      "</span><span>" +
-      esc(movie.genres.join(" · ")) +
-      '</span></div><div class="hero-actions"><button class="btn btn-light" data-action="save" data-value="' +
+      '</span><span class="meta-chip q">' +
+      movie.links.length +
+      ' servers</span></div><div class="btn-row">' +
+      '<a class="btn btn-accent" href="#player">▶ Play Now</a>' +
+      '<button class="btn btn-glass" data-action="save" data-value="' +
       esc(movie.slug) +
       '">' +
-      (saved(movie.slug) ? "In watchlist" : "Add to watchlist") +
-      '</button><a class="btn btn-ghost" href="#/catalog">Back to catalog</a></div>' +
-      "</div></div></section>" +
-      '<div class="columns"><div><div class="player">' +
-      '<video controls playsinline poster="' +
+      (saved(movie.slug) ? "✓ In My List" : "+ My List") +
+      '</button></div></div></div></section>' +
+
+      '<div class="columns"><div id="player">' +
+      '<div class="player"><video controls playsinline poster="' +
       esc(movie.posterUrl) +
       '" src="' +
       esc(current ? current.url : "") +
-      '"></video>' +
-      '<div class="player-body"><p class="eyebrow">Watch servers</p>' +
-      '<p class="muted">Now playing via ' +
+      '"></video><div class="player-body">' +
+      '<p class="tag-pill" style="margin-bottom:.85rem">Now streaming · ' +
       esc(current ? current.server.name : "—") +
       " · " +
       esc(current ? current.quality : "—") +
-      " · " +
-      esc(current ? current.language : "—") +
-      " · " +
-      esc(current ? current.fileSize : "—") +
       "</p>" +
       qualityChips +
       '<div class="server-grid">' +
-      servers +
+      visible
+        .map(function (link) {
+          const on = current && link === current;
+          return (
+            '<button class="server' +
+            (on ? " on" : "") +
+            '" data-action="server" data-value="' +
+            esc(link.server.name + "|" + link.quality + "|" + link.fileSize) +
+            '"><div class="top"><span class="name"><span class="dot-sm" style="background:' +
+            esc(link.server.accent) +
+            '"></span>' +
+            esc(link.server.name) +
+            '</span><span class="q">' +
+            esc(link.quality) +
+            "</span></div>" +
+            '<p class="sub">' +
+            esc(link.language) +
+            " · " +
+            esc(link.fileSize) +
+            " · " +
+            link.server.latencyMs +
+            "ms</p></button>"
+          );
+        })
+        .join("") +
       "</div></div></div>" +
       '<p class="synopsis">' +
       esc(movie.synopsis) +
       "</p>" +
       (movie.cast.length
-        ? "<h2>Cast</h2><ul class=\"cast\">" +
+        ? "<h2 style=\"margin-top:2rem;font-size:1.35rem\">Cast</h2><ul class=\"cast\">" +
           movie.cast
             .map(function (person) {
               return (
@@ -425,7 +484,26 @@
           "</ul>"
         : "") +
       "</div>" +
-      '<aside><div class="panel"><h3>Mirrors</h3><ul>' +
+      '<aside><div class="panel"><h3>Movie Info</h3><ul>' +
+      "<li><strong>Director</strong><span>" +
+      esc(movie.director) +
+      "</span></li>" +
+      "<li><strong>Country</strong><span>" +
+      esc(movie.country) +
+      "</span></li>" +
+      "<li><strong>Runtime</strong><span>" +
+      runtime(movie.runtimeMinutes) +
+      "</span></li>" +
+      "<li><strong>Rating</strong><span>" +
+      esc(movie.contentRating) +
+      " · " +
+      movie.score.toFixed(1) +
+      "/10</span></li>" +
+      "<li><strong>Available in</strong><span>" +
+      esc(qualities.join(", ")) +
+      "</span></li>" +
+      "</ul></div>" +
+      '<div class="panel" style="margin-top:1.15rem"><h3>Servers</h3><ul>' +
       links
         .map(function (link) {
           return (
@@ -434,8 +512,6 @@
             "</strong><span>" +
             esc(link.quality) +
             " · " +
-            esc(link.language) +
-            " · " +
             esc(link.fileSize) +
             " · " +
             link.server.latencyMs +
@@ -443,7 +519,19 @@
           );
         })
         .join("") +
-      "</ul></div></aside></div>"
+      "</ul></div></aside></div>" +
+
+      row(
+        "More Like This",
+        DATA.movies.filter(function (other) {
+          return (
+            other.slug !== movie.slug &&
+            other.genres.some(function (genre) {
+              return movie.genres.indexOf(genre) > -1;
+            })
+          );
+        }).slice(0, 10),
+      )
     );
   }
 
@@ -453,50 +541,90 @@
       return list.indexOf(movie.slug) > -1;
     });
     return (
-      '<section class="section" style="margin-top:2.5rem">' +
-      '<p class="eyebrow">Private reel</p><h2>Watchlist</h2>' +
-      '<p class="muted">Saved in this browser only — no account needed.</p>' +
+      '<section class="section" style="margin-top:2.25rem">' +
+      '<div class="section-head"><h2 style="font-size:1.85rem">My List</h2></div>' +
+      '<p class="muted">Saved in this browser — no account needed.</p>' +
       (movies.length
         ? '<div class="grid" style="margin-top:1.5rem">' + movies.map(card).join("") + "</div>"
-        : '<p class="empty">Nothing saved yet. Open a film and add it to the reel.</p>') +
+        : '<p class="empty">Nothing saved yet. Open a film and press “+ My List”.</p>') +
       "</section>"
     );
   }
 
   function servicesPage() {
     return (
-      '<section class="section" style="margin-top:2.5rem">' +
-      sectionHead("Beyond DGN", "Browse every service", DATA.services.length + " services") +
-      '<div class="services">' +
-      DATA.services.map(serviceCard).join("") +
+      '<section class="section" style="margin-top:2.25rem">' +
+      '<div class="section-head"><h2 style="font-size:1.85rem">Streaming Platforms</h2>' +
+      '<span class="muted">' +
+      DATA.services.length +
+      " platforms</span></div>" +
+      '<p class="muted">The rest of the streaming world, gathered in one place.</p>' +
+      '<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(180px,1fr));margin-top:1.5rem">' +
+      DATA.services.map(providerTile).join("") +
       "</div></section>"
     );
   }
 
-  /* ---------- router ---------- */
+  /* ---------------- router ---------------- */
+  function setActiveNav(route) {
+    Array.prototype.forEach.call(navLinks.querySelectorAll("a"), function (link) {
+      link.classList.toggle("on", link.getAttribute("data-route") === route);
+    });
+  }
+
   function render() {
     const hash = window.location.hash || "#/";
     let html;
+    let route = "/";
 
     if (hash.indexOf("#/movie/") === 0) {
       html = moviePage(hash.slice("#/movie/".length));
+      route = "/catalog";
     } else if (hash === "#/catalog") {
       html = catalogPage();
+      route = "/catalog";
     } else if (hash === "#/services") {
       html = servicesPage();
+      route = "/services";
     } else if (hash === "#/watchlist") {
       html = watchlistPage();
+      route = "/watchlist";
     } else {
       html = homePage();
+      route = "/";
     }
 
     app.innerHTML = html;
-    window.scrollTo({ top: 0, behavior: "auto" });
+    setActiveNav(route);
+
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+
+    if (route === "/") {
+      const slides = app.querySelectorAll(".hero-slide").length;
+      if (slides > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        timer = setInterval(function () {
+          slide = (slide + 1) % slides;
+          const nodes = app.querySelectorAll(".hero-slide");
+          const dots = app.querySelectorAll(".dots button");
+          Array.prototype.forEach.call(nodes, function (node, index) {
+            node.classList.toggle("on", index === slide);
+          });
+          Array.prototype.forEach.call(dots, function (node, index) {
+            node.classList.toggle("on", index === slide);
+          });
+        }, 6500);
+      }
+    }
   }
 
   window.addEventListener("hashchange", function () {
     playerState = { quality: "All", index: 0 };
+    slide = 0;
     render();
+    window.scrollTo({ top: 0, behavior: "auto" });
   });
 
   app.addEventListener("click", function (event) {
@@ -505,8 +633,13 @@
     const action = target.getAttribute("data-action");
     const value = target.getAttribute("data-value") || "";
 
-    if (action === "genre" || action === "year" || action === "quality") {
-      filters[action] = value;
+    if (action === "slide") {
+      slide = Number(value) || 0;
+      render();
+    } else if (action === "filter") {
+      return;
+    } else if (action === "quality") {
+      filters.quality = filters.quality === value ? "" : value;
       render();
     } else if (action === "pquality") {
       playerState = { quality: value, index: 0 };
@@ -517,7 +650,7 @@
       const movie = bySlug(slug);
       if (!movie) return;
       const links = movie.links.slice().sort(function (a, b) {
-        return qualityOrder(a.quality) - qualityOrder(b.quality) || a.server.latencyMs - b.server.latencyMs;
+        return qualityRank(a.quality) - qualityRank(b.quality) || a.server.latencyMs - b.server.latencyMs;
       });
       const visible =
         playerState.quality === "All"
@@ -533,6 +666,13 @@
       toggleSave(value);
       render();
     }
+  });
+
+  app.addEventListener("change", function (event) {
+    const target = event.target.closest("[data-action='filter']");
+    if (!target) return;
+    filters[target.getAttribute("data-value")] = target.value;
+    render();
   });
 
   searchBox.addEventListener("input", function (event) {
