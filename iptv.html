@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IPTV Hub — DGN Movies</title>
+    <meta name="theme-color" content="#95FF50" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero-iptv {
+        position: relative;
+        margin: -72px calc(50% - 50vw) 0;
+        padding: 8.5rem 0 3.5rem;
+        overflow: hidden;
+        border-radius: 0 0 32px 32px;
+        background:
+          radial-gradient(900px 380px at 15% 20%, rgba(149, 255, 80, 0.18), transparent 65%),
+          linear-gradient(120deg, #062416 0%, #04120b 70%);
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+      }
+      .link-card {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1.15rem;
+        background: var(--panel);
+        transition: all 0.2s ease;
+        display: block;
+      }
+      .link-card:hover {
+        border-color: rgba(149, 255, 80, 0.55);
+        transform: translateY(-4px);
+        background: var(--panel-2);
+      }
+      .link-card h3 {
+        font-size: 1.05rem;
+        margin-bottom: 0.35rem;
+      }
+      .link-card p {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin: 0;
+      }
+      .link-card .go {
+        display: inline-block;
+        margin-top: 0.75rem;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+      .tag {
+        display: inline-block;
+        padding: 0.2rem 0.65rem;
+        border-radius: 999px;
+        background: rgba(149, 255, 80, 0.15);
+        border: 1px solid rgba(149, 255, 80, 0.35);
+        color: var(--accent);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-shell">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">DGN</span>
+          <span class="brand-name">DGN</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#/catalog">Movies</a>
+          <a href="index.html#/services">Platforms</a>
+          <a href="iptv.html" class="on">IPTV</a>
+          <a href="index.html#/watchlist">My List</a>
+        </div>
+        <a class="nav-cta" href="import.html"><span class="plus">+</span> Movie</a>
+      </nav>
+    </div>
+
+    <main class="wrap">
+      <section class="hero-iptv">
+        <div style="position: relative; max-width: 720px">
+          <span class="tag-pill">Live TV toolkit</span>
+          <h1 style="font-size: clamp(2.4rem, 5.5vw, 3.75rem); margin: 1rem 0 0.75rem">
+            The IPTV Hub
+          </h1>
+          <p class="tagline" style="color: rgba(244, 255, 247, 0.85); font-size: 1.15rem">
+            Channel playlists, players, EPG guides and the tools that keep live TV running —
+            gathered in one place so you can set up a stream in minutes.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-accent" href="#playlists">Browse playlists</a>
+            <a
+              class="btn btn-glass"
+              href="https://github.com/iptv-org/awesome-iptv"
+              target="_blank"
+              rel="noreferrer"
+              >Source list ↗</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="playlists">
+        <div class="section-head">
+          <h2>Channel playlists</h2>
+          <span class="muted">Public M3U collections</span>
+        </div>
+        <div class="cards">
+          <a class="link-card" href="https://github.com/iptv-org/iptv" target="_blank" rel="noreferrer">
+            <h3>iptv-org/iptv</h3>
+            <p>Thousands of publicly available live channels, grouped by country, as ready-to-use M3U playlists.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+          <a class="link-card" href="https://github.com/iptv-org/iptv-org" target="_blank" rel="noreferrer">
+            <h3>iptv-org</h3>
+            <p>The organisation behind the open channel lists, datasets and tooling the IPTV community builds on.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+          <a class="link-card" href="https://github.com/iptv-org/channels" target="_blank" rel="noreferrer">
+            <h3>Channel metadata</h3>
+            <p>Structured channel data — names, countries, categories and logos — in a clean, machine-readable format.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Players</h2>
+          <span class="muted">Watch on any device</span>
+        </div>
+        <div class="cards">
+          <a class="link-card" href="https://www.videolan.org/vlc/" target="_blank" rel="noreferrer">
+            <h3>VLC Media Player</h3>
+            <p>Free, open-source and plays almost any stream or playlist on desktop and mobile.</p>
+            <span class="go">videolan.org ↗</span>
+          </a>
+          <a class="link-card" href="https://kodi.tv/" target="_blank" rel="noreferrer">
+            <h3>Kodi</h3>
+            <p>Cross-platform media centre with add-ons, library support and live TV integration.</p>
+            <span class="go">kodi.tv ↗</span>
+          </a>
+          <a class="link-card" href="https://www.plex.tv/" target="_blank" rel="noreferrer">
+            <h3>Plex</h3>
+            <p>Streams your own media and live channels to every screen in the house.</p>
+            <span class="go">plex.tv ↗</span>
+          </a>
+          <a class="link-card" href="https://tiviimate.com/" target="_blank" rel="noreferrer">
+            <h3>TiviMate</h3>
+            <p>Popular IPTV player for Android TV boxes with a polished electronic programme guide.</p>
+            <span class="go">tiviimate.com ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Tools</h2>
+          <span class="muted">Build, test and maintain</span>
+        </div>
+        <div class="cards">
+          <a class="link-card" href="https://github.com/streamlink/streamlink" target="_blank" rel="noreferrer">
+            <h3>Streamlink</h3>
+            <p>Command-line tool that extracts live streams and pipes them straight into your player.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+          <a class="link-card" href="https://github.com/iptv-org/iptv-checker" target="_blank" rel="noreferrer">
+            <h3>IPTV Checker</h3>
+            <p>Validates a playlist and reports which channels are online, broken or slow.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+          <a class="link-card" href="https://m3u4u.com/" target="_blank" rel="noreferrer">
+            <h3>m3u4u</h3>
+            <p>Create, edit and sort M3U playlists online, with EPG matching built in.</p>
+            <span class="go">m3u4u.com ↗</span>
+          </a>
+          <a class="link-card" href="https://github.com/xteve-project/x-teve" target="_blank" rel="noreferrer">
+            <h3>xTeVe</h3>
+            <p>A proxy that turns IPTV playlists into a live TV source your media centre understands.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>EPG guides</h2>
+          <span class="muted">Programme schedules</span>
+        </div>
+        <div class="cards">
+          <a class="link-card" href="https://github.com/iptv-org/epg" target="_blank" rel="noreferrer">
+            <h3>iptv-org/epg</h3>
+            <p>Free XMLTV programme guides for hundreds of channels worldwide, updated continuously.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+          <a class="link-card" href="https://github.com/SilentButeo2/webgrabplus-siteini" target="_blank" rel="noreferrer">
+            <h3>WebGrab+Plus</h3>
+            <p>Multi-site XMLTV grabber that collects schedules from many sources into one guide.</p>
+            <span class="go">Open on GitHub ↗</span>
+          </a>
+          <a class="link-card" href="https://open-epg.com/" target="_blank" rel="noreferrer">
+            <h3>Open EPG</h3>
+            <p>Free programme data sorted by country, ready to drop into any IPTV player.</p>
+            <span class="go">open-epg.com ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" style="margin-bottom: 3rem">
+        <div class="filter-bar" style="margin: 0">
+          <div style="flex: 1; min-width: 240px">
+            <strong>About this page</strong>
+            <p class="muted" style="margin: 0.5rem 0 0">
+              Curated by DGN after the open-source
+              <a
+                href="https://github.com/iptv-org/awesome-iptv"
+                target="_blank"
+                rel="noreferrer"
+                style="color: var(--accent); font-weight: 600"
+                >iptv-org/awesome-iptv</a
+              >
+              list. Each link goes to the project's own site — check what you're allowed to watch in
+              your country before streaming.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>
+          <p class="footer-brand">DGN MOVIES</p>
+          <p class="muted">
+            Movies, platforms and live TV tools — everything in one place, free to browse.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#/catalog">Movies</a>
+          <a href="index.html#/services">Platforms</a>
+          <a href="iptv.html">IPTV</a>
+          <a href="import.html">+ Movie</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
