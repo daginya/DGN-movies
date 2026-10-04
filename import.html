@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Import a movie — DGN Movies</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .tool {
+        max-width: 860px;
+        margin: 2.5rem auto 4rem;
+      }
+      .field {
+        display: grid;
+        gap: 0.35rem;
+        margin-bottom: 0.95rem;
+      }
+      .field label {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #1b0044;
+      }
+      .field small {
+        color: #6a3fb5;
+        font-size: 0.75rem;
+      }
+      input,
+      textarea,
+      select {
+        font: inherit;
+        padding: 0.65rem 0.95rem;
+        border: 2px solid #d3b8ff;
+        border-radius: 12px;
+        background: #f4eaff;
+        color: #1b0044;
+        outline: none;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: #7209e8;
+        background: #fff;
+      }
+      .two {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.95rem;
+      }
+      .row {
+        display: flex;
+        gap: 0.95rem;
+        flex-wrap: wrap;
+      }
+      .out {
+        width: 100%;
+        min-height: 220px;
+        font-family: ui-monospace, Menlo, Consolas, monospace;
+        font-size: 0.82rem;
+        background: #1b0044;
+        color: #e9dcff;
+        border: 2px solid #7209e8;
+      }
+      .steps {
+        border: 2px solid #d3b8ff;
+        border-radius: 18px;
+        background: #f4eaff;
+        padding: 1.25rem 1.5rem;
+        margin: 1.5rem 0;
+      }
+      .steps ol {
+        margin: 0.5rem 0 0;
+        padding-left: 1.2rem;
+        color: #1b0044;
+      }
+      .steps li {
+        margin-bottom: 0.45rem;
+      }
+      code {
+        background: #fff;
+        border: 1px solid #d3b8ff;
+        border-radius: 6px;
+        padding: 0.1rem 0.4rem;
+        font-size: 0.85em;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">DGN</span>
+          <span class="brand-text"><strong>DGN</strong><small>Movies</small></span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Site</a>
+          <a href="index.html#/catalog">Catalog</a>
+          <a href="index.html#/watchlist">Watchlist</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="tool wrap">
+      <p class="eyebrow">Add to the catalog</p>
+      <h2>Import a movie</h2>
+      <p class="muted">
+        Fill this in, click <strong>Make the code</strong>, then copy the result into
+        <code>data.js</code>. The site does the rest.
+      </p>
+
+      <div class="steps">
+        <strong>How to get it on your site</strong>
+        <ol>
+          <li>Fill in the form and press <strong>Make the code</strong></li>
+          <li>Press <strong>Copy</strong>, then open <code>data.js</code> in Notepad or TextEdit</li>
+          <li>Find the line <code>"movies": [</code> and paste your code right after the <code>[</code></li>
+          <li>Add a comma <code>,</code> at the very end of your pasted block</li>
+          <li>Save, upload the folder again — your site updates</li>
+        </ol>
+      </div>
+
+      <div class="field">
+        <label for="title">Title</label>
+        <input id="title" placeholder="The Long Horizon" />
+      </div>
+
+      <div class="field">
+        <label for="tagline">Tagline</label>
+        <input id="tagline" placeholder="Some journeys never end." />
+      </div>
+
+      <div class="field">
+        <label for="synopsis">Synopsis</label>
+        <textarea id="synopsis" rows="4" placeholder="What the film is about…"></textarea>
+      </div>
+
+      <div class="two">
+        <div class="field">
+          <label for="year">Year</label>
+          <input id="year" type="number" value="2025" />
+        </div>
+        <div class="field">
+          <label for="runtime">Runtime (minutes)</label>
+          <input id="runtime" type="number" value="110" />
+        </div>
+        <div class="field">
+          <label for="rating">Age rating</label>
+          <select id="rating">
+            <option>G</option>
+            <option>PG</option>
+            <option selected>PG-13</option>
+            <option>R</option>
+            <option>NR</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="score">Score (0–10)</label>
+          <input id="score" type="number" step="0.1" value="7.5" />
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="field">
+          <label for="director">Director</label>
+          <input id="director" placeholder="Ava Chen" />
+        </div>
+        <div class="field">
+          <label for="country">Country</label>
+          <input id="country" placeholder="United States" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="poster">Poster image</label>
+        <input id="poster" placeholder="images/posters/my-film.jpg  or  https://…/poster.jpg" />
+        <small>Put your own artwork in the images/posters folder, or paste a web address.</small>
+      </div>
+
+      <div class="field">
+        <label for="genres">Genres (comma separated)</label>
+        <input id="genres" placeholder="Drama, Thriller" />
+      </div>
+
+      <div class="field">
+        <label for="cast">Cast (one per line: Name — Role)</label>
+        <textarea id="cast" rows="3" placeholder="Ava Chen — Director
+Sam Reed — Pilot"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="links">Streaming servers (one per line)</label>
+        <textarea id="links" rows="4" placeholder="4K|English|https://…/film.mp4|4.2 GB|Nova Prime
+1080p|English|https://…/film.mp4|1.8 GB|Helix EU"></textarea>
+        <small>
+          Format: quality | language | video address | file size | server name — use 4K, 2100p, 1080p,
+          720p, 480p or 360p. Add one line per server so viewers can switch.
+        </small>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-primary" id="make">Make the code</button>
+        <button class="btn btn-ghost" id="copy" style="border-color: #7209e8; color: #7209e8">
+          Copy
+        </button>
+        <a class="btn btn-ghost" href="index.html#/catalog" style="border-color: #7209e8; color: #7209e8"
+          >Back to catalog</a
+        >
+      </div>
+
+      <div class="field" style="margin-top: 1.25rem">
+        <label for="out">Your movie code</label>
+        <textarea id="out" class="out" readonly></textarea>
+      </div>
+    </main>
+
+    <script>
+      function slugify(text) {
+        return String(text)
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "")
+          .slice(0, 60);
+      }
+
+      function build() {
+        const value = (id) => document.getElementById(id).value.trim();
+        const title = value("title") || "Untitled";
+        const slug = slugify(title);
+        const poster = value("poster") || "images/posters/fallback.svg";
+
+        const cast = value("cast")
+          .split("\n")
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => {
+            const parts = line.split(/\s+[—–-]\s+/);
+            return {
+              name: parts[0] || line,
+              role: parts[1] || "",
+            };
+          });
+
+        const links = value("links")
+          .split("\n")
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => {
+            const p = line.split("|").map((x) => x.trim());
+            return {
+              quality: p[0] || "1080p",
+              language: p[1] || "English",
+              url: p[2] || "",
+              fileSize: p[3] || "1.8 GB",
+              server: {
+                name: p[4] || "DGN Direct",
+                code: slugify(p[4] || "dgn-direct"),
+                region: "Global",
+                status: "online",
+                latencyMs: 25,
+                accent: "#7209e8",
+              },
+            };
+          });
+
+        const movie = {
+          id: Date.now(),
+          slug: slug,
+          title: title,
+          tagline: value("tagline"),
+          synopsis: value("synopsis"),
+          year: Number(value("year")) || 2025,
+          runtimeMinutes: Number(value("runtime")) || 100,
+          contentRating: value("rating") || "PG-13",
+          score: Number(value("score")) || 7.5,
+          posterUrl: poster,
+          backdropUrl: poster,
+          director: value("director"),
+          country: value("country"),
+          featured: false,
+          trending: false,
+          genres: value("genres")
+            .split(",")
+            .map((g) => g.trim())
+            .filter(Boolean),
+          cast: cast,
+          links: links,
+        };
+
+        document.getElementById("out").value = JSON.stringify(movie, null, 2) + ",";
+      }
+
+      document.getElementById("make").addEventListener("click", build);
+
+      document.getElementById("copy").addEventListener("click", function () {
+        const out = document.getElementById("out");
+        if (!out.value.trim()) build();
+        out.select();
+        document.execCommand("copy");
+        this.textContent = "Copied ✓";
+        const button = this;
+        setTimeout(function () {
+          button.textContent = "Copy";
+        }, 1800);
+      });
+    </script>
+  </body>
+</html>

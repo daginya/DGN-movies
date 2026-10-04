@@ -1,2 +1,2267 @@
-window.DGN_DATA = {"servers":[{"name":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341"},{"name":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab"},{"name":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0"},{"name":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff"},{"name":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a"},{"name":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5"}],"movies":[{"slug":"ember-court","title":"Ember Court","tagline":"Diplomacy, then fire.","synopsis":"A disgraced envoy is summoned to a volcanic empire where every treaty is tried in a court of living magma. To save her city she must win a case no outsider has survived — and choose which version of the verdict each server will carry home.","year":2025,"runtime":141,"rating":"PG-13","score":8.7,"poster":"ember-court.jpg","backdrop":"ember-court.jpg","director":"Sera Okonkwo","country":"Nigeria","featured":true,"trending":true,"genres":[{"name":"Fantasy","slug":"fantasy"},{"name":"Adventure","slug":"adventure"}],"cast":[{"name":"Imani Adeyemi","role":"Envoy"},{"name":"Kael Veyra","role":"Ash Prince"},{"name":"Nura Sol","role":"Glass Advocate"},{"name":"Rook Tan","role":"Ember Guard"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4","size":"2.4 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"8.1 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4","size":"4.3 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4","size":"2.3 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4","size":"442 MB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"720p","language":"Español","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4","size":"1.3 GB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4","size":"737 MB"}]},{"slug":"neon-harbor","title":"Neon Harbor","tagline":"The tide remembers every crime.","synopsis":"In a megaport drowned by rising seas, detective Jun Park hunts a stolen weather AI that only surfaces at high tide. Each server in the harbor’s black-market grid holds a different cut of the truth — and the wrong stream gets you erased with the next flood.","year":2024,"runtime":128,"rating":"R","score":8.4,"poster":"neon-harbor.jpg","backdrop":"neon-harbor.jpg","director":"Mina Cho","country":"South Korea","featured":true,"trending":true,"genres":[{"name":"Sci-Fi","slug":"sci-fi"},{"name":"Thriller","slug":"thriller"}],"cast":[{"name":"Jun Park","role":"Detective Park"},{"name":"Aisha Rahman","role":"Harbor AI"},{"name":"Leo Voss","role":"Dock Boss"},{"name":"Hana Kim","role":"Tide Keeper"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"2.1 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English + KO","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4","size":"6.4 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"1.2 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"3.8 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"한국어","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"2.0 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"387 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"645 MB"}]},{"slug":"the-atlas-room","title":"The Atlas Room","tagline":"Maps of countries that do not exist yet.","synopsis":"A map librarian finds a locked room of atlases for nations that have not been founded. Each night a new plate appears. Each plate is mirrored on a different server. Reading the wrong folio founds the country in the real world — with her as its first missing citizen.","year":2020,"runtime":111,"rating":"PG-13","score":8.3,"poster":"atlas-room.svg","backdrop":"atlas-room.svg","director":"Iris Lang","country":"United Kingdom","featured":true,"trending":false,"genres":[{"name":"Mystery","slug":"mystery"},{"name":"Fantasy","slug":"fantasy"}],"cast":[{"name":"Edith Calder","role":"Librarian"},{"name":"Mr. Quill","role":"Custodian"},{"name":"Jonah Reed","role":"Cartographer"},{"name":"The Index","role":"Voice"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"1.9 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"6.1 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"2.0 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"3.6 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"1.1 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"369 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"614 MB"}]},{"slug":"the-last-lighthouse","title":"The Last Lighthouse","tagline":"The last analog signal on Earth.","synopsis":"When Mara inherits a crumbling Atlantic lighthouse, she discovers it is still broadcasting a forbidden analog frequency. Governments want the lamp dark. Sailors still steer by it. And the people who answer the signal should not exist.","year":2023,"runtime":116,"rating":"PG-13","score":8.1,"poster":"last-lighthouse.jpg","backdrop":"last-lighthouse.jpg","director":"Arthur Bell","country":"Ireland","featured":true,"trending":false,"genres":[{"name":"Drama","slug":"drama"},{"name":"Mystery","slug":"mystery"}],"cast":[{"name":"Mara Quinn","role":"Keeper"},{"name":"Owen Hale","role":"Coast Guard"},{"name":"Siobhan Rea","role":"Mother"},{"name":"Tomás Byrne","role":"Signal Thief"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"1.9 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"6.1 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"2.0 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"3.4 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"1.0 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"350 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4","size":"700 MB"}]},{"slug":"sintel","title":"Sintel","tagline":"A Blender Foundation open movie.","synopsis":"A young woman named Sintel searches for a baby dragon she raised, crossing a brutal landscape of ice, stone, and old magic. This is the Blender Institute’s open-source short — mirrored here across multiple public servers so you can compare streams, quality, and latency.","year":2010,"runtime":14,"rating":"PG","score":8.6,"poster":"sintel.svg","backdrop":"sintel.svg","director":"Colin Levy","country":"Netherlands","featured":false,"trending":true,"genres":[{"name":"Animation","slug":"animation"},{"name":"Fantasy","slug":"fantasy"},{"name":"Adventure","slug":"adventure"}],"cast":[{"name":"Halina Reijn","role":"Sintel"},{"name":"Thom Hoffman","role":"Shaman"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"1.1 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"3.4 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"620 MB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"2.0 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"203 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"1.1 GB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"338 MB"}]},{"slug":"quiet-orbit","title":"Quiet Orbit","tagline":"Earth went silent. The work did not.","synopsis":"Two technicians keep a research station alive after Earth stops answering. Their only company is a stack of mirrored servers, each claiming a different last message from home. One of them is a lie that will kill the orbit.","year":2024,"runtime":109,"rating":"PG-13","score":8,"poster":"quiet-orbit.jpg","backdrop":"quiet-orbit.jpg","director":"Levin Hart","country":"Canada","featured":false,"trending":true,"genres":[{"name":"Sci-Fi","slug":"sci-fi"},{"name":"Drama","slug":"drama"}],"cast":[{"name":"Sam Ori","role":"Comms"},{"name":"Rene Adler","role":"Systems"},{"name":"Captain Ives","role":"Last Voice"},{"name":"PIO-9","role":"Station AI"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"1.1 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"5.8 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"4.0 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"2.2 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"406 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"676 MB"}]},{"slug":"velvet-heist","title":"Velvet Heist","tagline":"The painting remembers who stole it.","synopsis":"A jazz singer and a forger attempt the last elegant robbery in a city that has forgotten elegance. The canvas they lift is a living ledger — every previous thief still trapped in the varnish, arguing over which server should host the escape.","year":2022,"runtime":121,"rating":"R","score":7.9,"poster":"velvet-heist.jpg","backdrop":"velvet-heist.jpg","director":"Claudia Moreau","country":"France","featured":false,"trending":true,"genres":[{"name":"Crime","slug":"crime"},{"name":"Noir","slug":"noir"}],"cast":[{"name":"Lila Vane","role":"Singer"},{"name":"Emile Roche","role":"Forger"},{"name":"Inspector Brant","role":"Police"},{"name":"Madame Kite","role":"Collector"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"2.1 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"Français","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"6.4 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1080p","language":"Français","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"2.0 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"Français","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"3.6 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"720p","language":"Português","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4","size":"1.2 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"Français","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"369 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"Français","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"614 MB"}]},{"slug":"glass-monsoon","title":"Glass Monsoon","tagline":"Once a year, the city rains knives.","synopsis":"Courier Rhee has twelve hours to cross a city that sheds its glass skin every monsoon. Roof routes, subway mirrors, and illegal stream relays all claim to be the safe path. She can trust only one server — and it will not tell her which.","year":2021,"runtime":118,"rating":"PG-13","score":7.8,"poster":"glass-monsoon.jpg","backdrop":"glass-monsoon.jpg","director":"Priya Nair","country":"India","featured":false,"trending":true,"genres":[{"name":"Adventure","slug":"adventure"},{"name":"Sci-Fi","slug":"sci-fi"}],"cast":[{"name":"Rhee Das","role":"Courier"},{"name":"Vikram Shah","role":"Dispatcher"},{"name":"Anu Mehta","role":"Glass Saint"},{"name":"Kiran","role":"Runner"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4","size":"2.2 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"6.9 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"1.1 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"हिन्दी","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4","size":"3.8 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"हिन्दी","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4","size":"2.1 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"हिन्दी","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4","size":"387 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"हिन्दी","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4","size":"645 MB"}]},{"slug":"paper-kingdom","title":"Paper Kingdom","tagline":"Fold once. The city folds back.","synopsis":"A child folds a paper city that begins collecting real citizens. Each crease is a street, each tear a border. When the original is uploaded to rival servers, three slightly different kingdoms go to war over a single missing crane.","year":2022,"runtime":94,"rating":"PG","score":8.5,"poster":"paper-kingdom.svg","backdrop":"paper-kingdom.svg","director":"Haruto Abe","country":"Japan","featured":false,"trending":false,"genres":[{"name":"Animation","slug":"animation"},{"name":"Family","slug":"family"},{"name":"Fantasy","slug":"fantasy"}],"cast":[{"name":"Yuki","role":"Folder"},{"name":"The Crane","role":"Messenger"},{"name":"Mayor Ink","role":"Paper Mayor"},{"name":"Aunt Sora","role":"Aunt"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"1.6 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"5.1 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"900 MB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"2.9 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"日本語","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"1.7 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"295 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"492 MB"}]},{"slug":"midnight-sonata","title":"Midnight Sonata","tagline":"The missing movement is a confession.","synopsis":"A pianist is hired to finish a concerto left incomplete for forty years. Each rehearsal hall streams a different take of the missing movement. Somewhere in the servers is the composer’s real last night — and the reason the music was never allowed to end.","year":2023,"runtime":102,"rating":"PG-13","score":8.2,"poster":"midnight-sonata.jpg","backdrop":"midnight-sonata.jpg","director":"Elena Voss","country":"Austria","featured":false,"trending":false,"genres":[{"name":"Romance","slug":"romance"},{"name":"Drama","slug":"drama"}],"cast":[{"name":"Clara Weiss","role":"Pianist"},{"name":"Otto Kranz","role":"Patron"},{"name":"Lina Kranz","role":"Daughter"},{"name":"The Archivist","role":"Tape Keeper"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4","size":"1.9 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4","size":"5.2 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1080p","language":"Deutsch","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"1.8 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"Deutsch","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"3.2 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"720p","language":"Deutsch","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"1014 MB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"Deutsch","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"332 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"Deutsch","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4","size":"553 MB"}]},{"slug":"big-buck-bunny","title":"Big Buck Bunny","tagline":"A peaceful rabbit. Three terrible rodents.","synopsis":"The Peach Open Movie from the Blender Foundation. After a giant rabbit’s quiet morning is ruined by flying-squirrel bullies, he plans a very precise kind of revenge. Public-domain streaming, available on every DGN server.","year":2008,"runtime":10,"rating":"G","score":8,"poster":"bunny.svg","backdrop":"bunny.svg","director":"Sacha Goedegebure","country":"Netherlands","featured":false,"trending":false,"genres":[{"name":"Animation","slug":"animation"},{"name":"Comedy","slug":"comedy"},{"name":"Family","slug":"family"}],"cast":[{"name":"Big Buck","role":"Bunny"},{"name":"Frank","role":"Flying Squirrel"},{"name":"Rinky","role":"Flying Squirrel"},{"name":"Gimera","role":"Chinchilla"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"850 MB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"2.7 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1080p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"850 MB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"1.5 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"720p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"420 MB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"1080p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"850 MB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"153 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"None","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4","size":"255 MB"}]},{"slug":"tears-of-steel","title":"Tears of Steel","tagline":"Amsterdam. Robots. A choice that ends the world.","synopsis":"The Blender Institute’s live-action/CGI short about a scientist, a robot army, and a love that has to be rewritten. Streamed from multiple public mirrors so you can test 4K Pulse against Archive’s analog-feel 480p.","year":2012,"runtime":12,"rating":"PG-13","score":7.8,"poster":"tears.svg","backdrop":"tears.svg","director":"Ian Hubert","country":"Netherlands","featured":false,"trending":false,"genres":[{"name":"Sci-Fi","slug":"sci-fi"},{"name":"Action","slug":"action"},{"name":"Animation","slug":"animation"}],"cast":[{"name":"Derek de Lint","role":"Celiu"},{"name":"Sergio Hasselbaink","role":"Tux"},{"name":"Vanja Rukavina","role":"Thom"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"980 MB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"2.8 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"1.7 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"176 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"540 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4","size":"294 MB"}]},{"slug":"copper-sunday","title":"Copper Sunday","tagline":"One last parade before the mine is sealed.","synopsis":"A copper town throws its final Sunday parade as the mine is welded shut. The marching band, the sheriff, and the company man each upload a different cut of the day to the county servers. Only one version includes the body in the ore.","year":2019,"runtime":132,"rating":"R","score":7.7,"poster":"copper-sunday.svg","backdrop":"copper-sunday.svg","director":"Wade Ellison","country":"United States","featured":false,"trending":false,"genres":[{"name":"Western","slug":"western"},{"name":"Drama","slug":"drama"}],"cast":[{"name":"Calder Boone","role":"Sheriff"},{"name":"Ruth Vale","role":"Band Leader"},{"name":"Henry Pike","role":"Company"},{"name":"Kid Marrow","role":"Miner"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"1.3 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"8.0 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"4.5 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"461 MB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"2.5 GB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4","size":"720 MB"}]},{"slug":"sahara-protocol","title":"Sahara Protocol","tagline":"The border moves at noon.","synopsis":"Cartographer Nadia El-Sayed is hired to redraw a desert frontier that shifts every day. The protocol that governs it lives on six mirrored servers. If she publishes the wrong map, a city vanishes. If she publishes the right one, so does she.","year":2025,"runtime":124,"rating":"PG-13","score":7.6,"poster":"sahara-protocol.jpg","backdrop":"sahara-protocol.jpg","director":"Rami El-Sayed","country":"Morocco","featured":false,"trending":false,"genres":[{"name":"Action","slug":"action"},{"name":"Thriller","slug":"thriller"}],"cast":[{"name":"Nadia El-Sayed","role":"Cartographer"},{"name":"Yusef Malik","role":"Guide"},{"name":"Colonel Hart","role":"Protocol"},{"name":"Leila Ben","role":"Fixer"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"2.3 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4","size":"7.0 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"4.1 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"العربية","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4","size":"2.2 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"1.3 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"424 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4","size":"640 MB"}]},{"slug":"northwire-signal","title":"Northwire Signal","tagline":"The last shortwave operators on Earth.","synopsis":"A documentary crew winters with the last analog radio operators above the Arctic Circle. Their towers still bounce voices between continents. When the satellite grid fails for eleven minutes, Northwire is the only server that hears who is still out there.","year":2021,"runtime":96,"rating":"PG","score":7.5,"poster":"northwire.svg","backdrop":"northwire.svg","director":"Sigrid Holm","country":"Norway","featured":false,"trending":false,"genres":[{"name":"Documentary","slug":"documentary"},{"name":"Drama","slug":"drama"}],"cast":[{"name":"Lars Holm","role":"Operator"},{"name":"Anya Petrova","role":"Operator"},{"name":"Cam Reed","role":"Director"},{"name":"Static","role":"The Grid"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4","size":"1.7 GB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"5.8 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"720p","language":"Norsk","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4","size":"1.0 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"3.2 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"332 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"1.8 GB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4","size":"553 MB"}]},{"slug":"iron-orchard","title":"Iron Orchard","tagline":"The harvest came back wrong.","synopsis":"After a survey drone crashes in a family orchard, the trees begin growing fruit of rusted iron. Neighbors want it cut down. A corporation wants the seed. And the orchard’s private server starts broadcasting a harvest schedule for a crop that is not fruit.","year":2024,"runtime":98,"rating":"R","score":7.4,"poster":"iron-orchard.jpg","backdrop":"iron-orchard.jpg","director":"Jonah Pike","country":"United States","featured":false,"trending":false,"genres":[{"name":"Thriller","slug":"thriller"},{"name":"Horror","slug":"horror"}],"cast":[{"name":"Ellen Marsh","role":"Grower"},{"name":"Cal Marsh","role":"Son"},{"name":"Dr. Pell","role":"Surveyor"},{"name":"Sheriff Boone","role":"Sheriff"}],"links":[{"server":"Nova Prime","code":"nova","region":"US-East","status":"online","latency":18,"accent":"#e3b341","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4","size":"980 MB"},{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"5.4 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"3.1 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"1.7 GB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4","size":"313 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4","size":"510 MB"}]},{"slug":"elephants-dream","title":"Elephants Dream","tagline":"The first open movie.","synopsis":"Two characters wander a typewriter-ruled machine world in the original Blender Open Movie. Historic, strange, and still the best way to see how DGN’s servers disagree about a single reel.","year":2006,"runtime":11,"rating":"PG","score":7.2,"poster":"elephants.svg","backdrop":"elephants.svg","director":"Bassam Kurdali","country":"Netherlands","featured":false,"trending":false,"genres":[{"name":"Animation","slug":"animation"},{"name":"Fantasy","slug":"fantasy"}],"cast":[{"name":"Tygo Gernandt","role":"Proog"},{"name":"Cas Jansen","role":"Emo"}],"links":[{"server":"Pulse 4K","code":"pulse","region":"Global CDN","status":"online","latency":24,"accent":"#ff8fab","quality":"4K","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"2.2 GB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"720p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"380 MB"},{"server":"Helix EU","code":"helix","region":"Frankfurt","status":"online","latency":42,"accent":"#7dd3c0","quality":"1440p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"1.2 GB"},{"server":"Atlas APAC","code":"atlas","region":"Singapore","status":"online","latency":68,"accent":"#b9a0ff","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"700 MB"},{"server":"Nightbird","code":"nightbird","region":"São Paulo","status":"online","latency":89,"accent":"#ff9f5a","quality":"360p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"126 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"1080p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"700 MB"},{"server":"Archive Mirror","code":"archive","region":"Amsterdam","status":"degraded","latency":118,"accent":"#c4b8a5","quality":"480p","language":"English","url":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4","size":"210 MB"}]}]};
-window.DGN_SERVICES = [{"name":"Netflix","url":"https://www.netflix.com","color":"#e50914","note":"Subscription"},{"name":"Prime Video","url":"https://www.primevideo.com","color":"#00a8e1","note":"Subscription · Rent · Buy"},{"name":"Apple TV+","url":"https://tv.apple.com","color":"#000000","note":"Subscription · Rent · Buy"},{"name":"Disney+","url":"https://www.disneyplus.com","color":"#113ccf","note":"Subscription"},{"name":"HBO Max","url":"https://www.hbomax.com","color":"#5822b4","note":"Subscription"},{"name":"Hulu","url":"https://www.hulu.com","color":"#1ce783","note":"Subscription"},{"name":"Paramount+","url":"https://www.paramountplus.com","color":"#0064ff","note":"Subscription"},{"name":"Peacock","url":"https://www.peacocktv.com","color":"#111111","note":"Free · Subscription"},{"name":"YouTube Movies","url":"https://www.youtube.com/movies","color":"#ff0000","note":"Free · Rent · Buy"},{"name":"Google TV","url":"https://tv.google","color":"#4285f4","note":"Rent · Buy"},{"name":"Crunchyroll","url":"https://www.crunchyroll.com","color":"#f47521","note":"Anime · Free · Subscription"},{"name":"Showmax","url":"https://www.showmax.com","color":"#e4003a","note":"Subscription"},{"name":"Starz","url":"https://www.starz.com","color":"#0a0a0a","note":"Subscription"},{"name":"MUBI","url":"https://mubi.com","color":"#001489","note":"Arthouse · Subscription"},{"name":"Criterion Channel","url":"https://www.criterionchannel.com","color":"#1a1a1a","note":"Classics · Subscription"},{"name":"Tubi","url":"https://tubitv.com","color":"#7408ff","note":"Free with ads"},{"name":"Pluto TV","url":"https://pluto.tv","color":"#2c2c2c","note":"Free with ads"},{"name":"Plex","url":"https://www.plex.tv","color":"#e5a00d","note":"Free with ads"},{"name":"Kanopy","url":"https://www.kanopy.com","color":"#e4572e","note":"Free with library card"}];
+window.DGN_DATA = {
+  "services": [
+    {
+      "name": "Netflix",
+      "slug": "netflix",
+      "url": "https://www.netflix.com",
+      "tagline": "Originals, prestige series and a huge film library in 4K.",
+      "category": "Premium",
+      "accent": "#e50914"
+    },
+    {
+      "name": "Apple TV+",
+      "slug": "apple-tv-plus",
+      "url": "https://tv.apple.com",
+      "tagline": "Hand-built originals and new premieres every week.",
+      "category": "Premium",
+      "accent": "#1d1d1f"
+    },
+    {
+      "name": "Prime Video",
+      "slug": "prime-video",
+      "url": "https://www.primevideo.com",
+      "tagline": "Blockbusters, live sport, plus rentals and purchases.",
+      "category": "Premium",
+      "accent": "#00a8e1"
+    },
+    {
+      "name": "Disney+",
+      "slug": "disney-plus",
+      "url": "https://www.disneyplus.com",
+      "tagline": "Disney, Pixar, Marvel, Star Wars and National Geographic.",
+      "category": "Family",
+      "accent": "#113ccf"
+    },
+    {
+      "name": "Max",
+      "slug": "max",
+      "url": "https://www.max.com",
+      "tagline": "HBO series, Warner Bros. films and unscripted originals.",
+      "category": "Premium",
+      "accent": "#002be7"
+    },
+    {
+      "name": "Hulu",
+      "slug": "hulu",
+      "url": "https://www.hulu.com",
+      "tagline": "Next-day television, originals and deep film shelves.",
+      "category": "Ad-supported",
+      "accent": "#1ce783"
+    },
+    {
+      "name": "Paramount+",
+      "slug": "paramount-plus",
+      "url": "https://www.paramountplus.com",
+      "tagline": "Showtime drama, Paramount films and live sport.",
+      "category": "Premium",
+      "accent": "#0064ff"
+    },
+    {
+      "name": "Peacock",
+      "slug": "peacock",
+      "url": "https://www.peacocktv.com",
+      "tagline": "NBC hits, Universal films and live events.",
+      "category": "Ad-supported",
+      "accent": "#2a6fdb"
+    },
+    {
+      "name": "Crunchyroll",
+      "slug": "crunchyroll",
+      "url": "https://www.crunchyroll.com",
+      "tagline": "The largest anime library, subtitled and dubbed.",
+      "category": "Specialty",
+      "accent": "#f47521"
+    },
+    {
+      "name": "Mubi",
+      "slug": "mubi",
+      "url": "https://mubi.com",
+      "tagline": "A hand-picked film every day, curated by people.",
+      "category": "Specialty",
+      "accent": "#8c6e4f"
+    },
+    {
+      "name": "Criterion Channel",
+      "slug": "criterion-channel",
+      "url": "https://www.criterionchannel.com",
+      "tagline": "Classic and contemporary arthouse cinema.",
+      "category": "Specialty",
+      "accent": "#b8973f"
+    },
+    {
+      "name": "Shudder",
+      "slug": "shudder",
+      "url": "https://www.shudder.com",
+      "tagline": "Horror, thriller and cult cinema without the filler.",
+      "category": "Specialty",
+      "accent": "#b3121b"
+    },
+    {
+      "name": "Starz",
+      "slug": "starz",
+      "url": "https://www.starz.com",
+      "tagline": "Premium drama, film premieres and bold originals.",
+      "category": "Premium",
+      "accent": "#4a90d9"
+    },
+    {
+      "name": "Tubi",
+      "slug": "tubi",
+      "url": "https://tubitv.com",
+      "tagline": "Thousands of films and box sets, free with ads.",
+      "category": "Free",
+      "accent": "#ff6b00"
+    },
+    {
+      "name": "Pluto TV",
+      "slug": "pluto-tv",
+      "url": "https://pluto.tv",
+      "tagline": "Free live channels and on-demand films, no signup.",
+      "category": "Free",
+      "accent": "#3a86ff"
+    },
+    {
+      "name": "Plex",
+      "slug": "plex",
+      "url": "https://www.plex.tv",
+      "tagline": "Free films, live TV and your own media library.",
+      "category": "Free",
+      "accent": "#e5a00d"
+    },
+    {
+      "name": "The Roku Channel",
+      "slug": "roku-channel",
+      "url": "https://therokuchannel.roku.com",
+      "tagline": "Free movies, originals and live channels with ads.",
+      "category": "Free",
+      "accent": "#6c3c97"
+    },
+    {
+      "name": "YouTube",
+      "slug": "youtube",
+      "url": "https://www.youtube.com",
+      "tagline": "Rent or buy new releases, plus free films with ads.",
+      "category": "Free",
+      "accent": "#ff0000"
+    },
+    {
+      "name": "BBC iPlayer",
+      "slug": "bbc-iplayer",
+      "url": "https://www.bbc.co.uk/iplayer",
+      "tagline": "British drama, film and documentary, free in the UK.",
+      "category": "Free",
+      "accent": "#bb1919"
+    }
+  ],
+  "movies": [
+    {
+      "id": 3,
+      "slug": "ember-court",
+      "title": "Ember Court",
+      "tagline": "Diplomacy, then fire.",
+      "synopsis": "A disgraced envoy is summoned to a volcanic empire where every treaty is tried in a court of living magma. To save her city she must win a case no outsider has survived — and choose which version of the verdict each server will carry home.",
+      "year": 2025,
+      "runtimeMinutes": 141,
+      "contentRating": "PG-13",
+      "score": 8.7,
+      "posterUrl": "images/posters/ember-court.jpg",
+      "backdropUrl": "images/posters/ember-court.jpg",
+      "director": "Sera Okonkwo",
+      "country": "Nigeria",
+      "featured": true,
+      "trending": true,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Imani Adeyemi",
+          "role": "Envoy"
+        },
+        {
+          "name": "Kael Veyra",
+          "role": "Ash Prince"
+        },
+        {
+          "name": "Nura Sol",
+          "role": "Glass Advocate"
+        },
+        {
+          "name": "Rook Tan",
+          "role": "Ember Guard"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+          "fileSize": "2.4 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "8.1 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "fileSize": "2.3 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "Español",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "fileSize": "1.3 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "slug": "neon-harbor",
+      "title": "Neon Harbor",
+      "tagline": "The tide remembers every crime.",
+      "synopsis": "In a megaport drowned by rising seas, detective Jun Park hunts a stolen weather AI that only surfaces at high tide. Each server in the harbor’s black-market grid holds a different cut of the truth — and the wrong stream gets you erased with the next flood.",
+      "year": 2024,
+      "runtimeMinutes": 128,
+      "contentRating": "R",
+      "score": 8.4,
+      "posterUrl": "images/posters/neon-harbor.jpg",
+      "backdropUrl": "images/posters/neon-harbor.jpg",
+      "director": "Mina Cho",
+      "country": "South Korea",
+      "featured": true,
+      "trending": true,
+      "genres": [
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "cast": [
+        {
+          "name": "Jun Park",
+          "role": "Detective Park"
+        },
+        {
+          "name": "Aisha Rahman",
+          "role": "Harbor AI"
+        },
+        {
+          "name": "Leo Voss",
+          "role": "Dock Boss"
+        },
+        {
+          "name": "Hana Kim",
+          "role": "Tide Keeper"
+        }
+      ],
+      "links": [
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "2.1 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English + KO",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "fileSize": "6.4 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "1.2 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "한국어",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "2.0 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "the-atlas-room",
+      "title": "The Atlas Room",
+      "tagline": "Maps of countries that do not exist yet.",
+      "synopsis": "A map librarian finds a locked room of atlases for nations that have not been founded. Each night a new plate appears. Each plate is mirrored on a different server. Reading the wrong folio founds the country in the real world — with her as its first missing citizen.",
+      "year": 2020,
+      "runtimeMinutes": 111,
+      "contentRating": "PG-13",
+      "score": 8.3,
+      "posterUrl": "images/posters/atlas-room.svg",
+      "backdropUrl": "images/posters/atlas-room.svg",
+      "director": "Iris Lang",
+      "country": "United Kingdom",
+      "featured": true,
+      "trending": false,
+      "genres": [
+        "Fantasy",
+        "Mystery"
+      ],
+      "cast": [
+        {
+          "name": "Edith Calder",
+          "role": "Librarian"
+        },
+        {
+          "name": "Mr. Quill",
+          "role": "Custodian"
+        },
+        {
+          "name": "Jonah Reed",
+          "role": "Cartographer"
+        },
+        {
+          "name": "The Index",
+          "role": "Voice"
+        }
+      ],
+      "links": [
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "1.9 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "6.1 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "2.0 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "the-last-lighthouse",
+      "title": "The Last Lighthouse",
+      "tagline": "The last analog signal on Earth.",
+      "synopsis": "When Mara inherits a crumbling Atlantic lighthouse, she discovers it is still broadcasting a forbidden analog frequency. Governments want the lamp dark. Sailors still steer by it. And the people who answer the signal should not exist.",
+      "year": 2023,
+      "runtimeMinutes": 116,
+      "contentRating": "PG-13",
+      "score": 8.1,
+      "posterUrl": "images/posters/last-lighthouse.jpg",
+      "backdropUrl": "images/posters/last-lighthouse.jpg",
+      "director": "Arthur Bell",
+      "country": "Ireland",
+      "featured": true,
+      "trending": false,
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "cast": [
+        {
+          "name": "Mara Quinn",
+          "role": "Keeper"
+        },
+        {
+          "name": "Owen Hale",
+          "role": "Coast Guard"
+        },
+        {
+          "name": "Siobhan Rea",
+          "role": "Mother"
+        },
+        {
+          "name": "Tomás Byrne",
+          "role": "Signal Thief"
+        }
+      ],
+      "links": [
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "1.9 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "2.0 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "sintel",
+      "title": "Sintel",
+      "tagline": "A Blender Foundation open movie.",
+      "synopsis": "A young woman named Sintel searches for a baby dragon she raised, crossing a brutal landscape of ice, stone, and old magic. This is the Blender Institute’s open-source short — mirrored here across multiple public servers so you can compare streams, quality, and latency.",
+      "year": 2010,
+      "runtimeMinutes": 14,
+      "contentRating": "PG",
+      "score": 8.6,
+      "posterUrl": "images/posters/sintel.svg",
+      "backdropUrl": "images/posters/sintel.svg",
+      "director": "Colin Levy",
+      "country": "Netherlands",
+      "featured": false,
+      "trending": true,
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Halina Reijn",
+          "role": "Sintel"
+        },
+        {
+          "name": "Thom Hoffman",
+          "role": "Shaman"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "3.4 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "620 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "quiet-orbit",
+      "title": "Quiet Orbit",
+      "tagline": "Earth went silent. The work did not.",
+      "synopsis": "Two technicians keep a research station alive after Earth stops answering. Their only company is a stack of mirrored servers, each claiming a different last message from home. One of them is a lie that will kill the orbit.",
+      "year": 2024,
+      "runtimeMinutes": 109,
+      "contentRating": "PG-13",
+      "score": 8,
+      "posterUrl": "images/posters/quiet-orbit.jpg",
+      "backdropUrl": "images/posters/quiet-orbit.jpg",
+      "director": "Levin Hart",
+      "country": "Canada",
+      "featured": false,
+      "trending": true,
+      "genres": [
+        "Drama",
+        "Sci-Fi"
+      ],
+      "cast": [
+        {
+          "name": "Sam Ori",
+          "role": "Comms"
+        },
+        {
+          "name": "Rene Adler",
+          "role": "Systems"
+        },
+        {
+          "name": "Captain Ives",
+          "role": "Last Voice"
+        },
+        {
+          "name": "PIO-9",
+          "role": "Station AI"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "5.8 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "2.2 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "velvet-heist",
+      "title": "Velvet Heist",
+      "tagline": "The painting remembers who stole it.",
+      "synopsis": "A jazz singer and a forger attempt the last elegant robbery in a city that has forgotten elegance. The canvas they lift is a living ledger — every previous thief still trapped in the varnish, arguing over which server should host the escape.",
+      "year": 2022,
+      "runtimeMinutes": 121,
+      "contentRating": "R",
+      "score": 7.9,
+      "posterUrl": "images/posters/velvet-heist.jpg",
+      "backdropUrl": "images/posters/velvet-heist.jpg",
+      "director": "Claudia Moreau",
+      "country": "France",
+      "featured": false,
+      "trending": true,
+      "genres": [
+        "Crime",
+        "Noir"
+      ],
+      "cast": [
+        {
+          "name": "Lila Vane",
+          "role": "Singer"
+        },
+        {
+          "name": "Emile Roche",
+          "role": "Forger"
+        },
+        {
+          "name": "Inspector Brant",
+          "role": "Police"
+        },
+        {
+          "name": "Madame Kite",
+          "role": "Collector"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "2.1 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "Français",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "2.0 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "Português",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "fileSize": "1.2 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "glass-monsoon",
+      "title": "Glass Monsoon",
+      "tagline": "Once a year, the city rains knives.",
+      "synopsis": "Courier Rhee has twelve hours to cross a city that sheds its glass skin every monsoon. Roof routes, subway mirrors, and illegal stream relays all claim to be the safe path. She can trust only one server — and it will not tell her which.",
+      "year": 2021,
+      "runtimeMinutes": 118,
+      "contentRating": "PG-13",
+      "score": 7.8,
+      "posterUrl": "images/posters/glass-monsoon.jpg",
+      "backdropUrl": "images/posters/glass-monsoon.jpg",
+      "director": "Priya Nair",
+      "country": "India",
+      "featured": false,
+      "trending": true,
+      "genres": [
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "cast": [
+        {
+          "name": "Rhee Das",
+          "role": "Courier"
+        },
+        {
+          "name": "Vikram Shah",
+          "role": "Dispatcher"
+        },
+        {
+          "name": "Anu Mehta",
+          "role": "Glass Saint"
+        },
+        {
+          "name": "Kiran",
+          "role": "Runner"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "fileSize": "2.2 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "6.9 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "हिन्दी",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "fileSize": "2.1 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "paper-kingdom",
+      "title": "Paper Kingdom",
+      "tagline": "Fold once. The city folds back.",
+      "synopsis": "A child folds a paper city that begins collecting real citizens. Each crease is a street, each tear a border. When the original is uploaded to rival servers, three slightly different kingdoms go to war over a single missing crane.",
+      "year": 2022,
+      "runtimeMinutes": 94,
+      "contentRating": "PG",
+      "score": 8.5,
+      "posterUrl": "images/posters/paper-kingdom.svg",
+      "backdropUrl": "images/posters/paper-kingdom.svg",
+      "director": "Haruto Abe",
+      "country": "Japan",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Animation",
+        "Family",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Yuki",
+          "role": "Folder"
+        },
+        {
+          "name": "The Crane",
+          "role": "Messenger"
+        },
+        {
+          "name": "Mayor Ink",
+          "role": "Paper Mayor"
+        },
+        {
+          "name": "Aunt Sora",
+          "role": "Aunt"
+        }
+      ],
+      "links": [
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "1.6 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "900 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "日本語",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "1.7 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "midnight-sonata",
+      "title": "Midnight Sonata",
+      "tagline": "The missing movement is a confession.",
+      "synopsis": "A pianist is hired to finish a concerto left incomplete for forty years. Each rehearsal hall streams a different take of the missing movement. Somewhere in the servers is the composer’s real last night — and the reason the music was never allowed to end.",
+      "year": 2023,
+      "runtimeMinutes": 102,
+      "contentRating": "PG-13",
+      "score": 8.2,
+      "posterUrl": "images/posters/midnight-sonata.jpg",
+      "backdropUrl": "images/posters/midnight-sonata.jpg",
+      "director": "Elena Voss",
+      "country": "Austria",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "cast": [
+        {
+          "name": "Clara Weiss",
+          "role": "Pianist"
+        },
+        {
+          "name": "Otto Kranz",
+          "role": "Patron"
+        },
+        {
+          "name": "Lina Kranz",
+          "role": "Daughter"
+        },
+        {
+          "name": "The Archivist",
+          "role": "Tape Keeper"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "fileSize": "1.9 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "fileSize": "5.2 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "Deutsch",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "1.8 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "big-buck-bunny",
+      "title": "Big Buck Bunny",
+      "tagline": "A peaceful rabbit. Three terrible rodents.",
+      "synopsis": "The Peach Open Movie from the Blender Foundation. After a giant rabbit’s quiet morning is ruined by flying-squirrel bullies, he plans a very precise kind of revenge. Public-domain streaming, available on every DGN server.",
+      "year": 2008,
+      "runtimeMinutes": 10,
+      "contentRating": "G",
+      "score": 8,
+      "posterUrl": "images/posters/bunny.svg",
+      "backdropUrl": "images/posters/bunny.svg",
+      "director": "Sacha Goedegebure",
+      "country": "Netherlands",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Family"
+      ],
+      "cast": [
+        {
+          "name": "Big Buck",
+          "role": "Bunny"
+        },
+        {
+          "name": "Frank",
+          "role": "Flying Squirrel"
+        },
+        {
+          "name": "Rinky",
+          "role": "Flying Squirrel"
+        },
+        {
+          "name": "Gimera",
+          "role": "Chinchilla"
+        }
+      ],
+      "links": [
+        {
+          "quality": "4K",
+          "language": "None",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "850 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "None",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "850 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "None",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "None",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "fileSize": "850 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "tears-of-steel",
+      "title": "Tears of Steel",
+      "tagline": "Amsterdam. Robots. A choice that ends the world.",
+      "synopsis": "The Blender Institute’s live-action/CGI short about a scientist, a robot army, and a love that has to be rewritten. Streamed from multiple public mirrors so you can test 4K Pulse against Archive’s analog-feel 480p.",
+      "year": 2012,
+      "runtimeMinutes": 12,
+      "contentRating": "PG-13",
+      "score": 7.8,
+      "posterUrl": "images/posters/tears.svg",
+      "backdropUrl": "images/posters/tears.svg",
+      "director": "Ian Hubert",
+      "country": "Netherlands",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Action",
+        "Animation",
+        "Sci-Fi"
+      ],
+      "cast": [
+        {
+          "name": "Derek de Lint",
+          "role": "Celiu"
+        },
+        {
+          "name": "Sergio Hasselbaink",
+          "role": "Tux"
+        },
+        {
+          "name": "Vanja Rukavina",
+          "role": "Thom"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "980 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "2.8 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "fileSize": "540 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "copper-sunday",
+      "title": "Copper Sunday",
+      "tagline": "One last parade before the mine is sealed.",
+      "synopsis": "A copper town throws its final Sunday parade as the mine is welded shut. The marching band, the sheriff, and the company man each upload a different cut of the day to the county servers. Only one version includes the body in the ore.",
+      "year": 2019,
+      "runtimeMinutes": 132,
+      "contentRating": "R",
+      "score": 7.7,
+      "posterUrl": "images/posters/copper-sunday.svg",
+      "backdropUrl": "images/posters/copper-sunday.svg",
+      "director": "Wade Ellison",
+      "country": "United States",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Drama",
+        "Western"
+      ],
+      "cast": [
+        {
+          "name": "Calder Boone",
+          "role": "Sheriff"
+        },
+        {
+          "name": "Ruth Vale",
+          "role": "Band Leader"
+        },
+        {
+          "name": "Henry Pike",
+          "role": "Company"
+        },
+        {
+          "name": "Kid Marrow",
+          "role": "Miner"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "1.3 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "2.5 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+          "fileSize": "720 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "sahara-protocol",
+      "title": "Sahara Protocol",
+      "tagline": "The border moves at noon.",
+      "synopsis": "Cartographer Nadia El-Sayed is hired to redraw a desert frontier that shifts every day. The protocol that governs it lives on six mirrored servers. If she publishes the wrong map, a city vanishes. If she publishes the right one, so does she.",
+      "year": 2025,
+      "runtimeMinutes": 124,
+      "contentRating": "PG-13",
+      "score": 7.6,
+      "posterUrl": "images/posters/sahara-protocol.jpg",
+      "backdropUrl": "images/posters/sahara-protocol.jpg",
+      "director": "Rami El-Sayed",
+      "country": "Morocco",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "cast": [
+        {
+          "name": "Nadia El-Sayed",
+          "role": "Cartographer"
+        },
+        {
+          "name": "Yusef Malik",
+          "role": "Guide"
+        },
+        {
+          "name": "Colonel Hart",
+          "role": "Protocol"
+        },
+        {
+          "name": "Leila Ben",
+          "role": "Fixer"
+        }
+      ],
+      "links": [
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "2.3 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "fileSize": "7.0 GB",
+          "server": {
+            "name": "Pulse 4K",
+            "code": "pulse",
+            "region": "Global CDN",
+            "status": "online",
+            "latencyMs": 24,
+            "accent": "#c084fc"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "العربية",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+          "fileSize": "2.2 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+          "fileSize": "640 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "northwire-signal",
+      "title": "Northwire Signal",
+      "tagline": "The last shortwave operators on Earth.",
+      "synopsis": "A documentary crew winters with the last analog radio operators above the Arctic Circle. Their towers still bounce voices between continents. When the satellite grid fails for eleven minutes, Northwire is the only server that hears who is still out there.",
+      "year": 2021,
+      "runtimeMinutes": 96,
+      "contentRating": "PG",
+      "score": 7.5,
+      "posterUrl": "images/posters/northwire.svg",
+      "backdropUrl": "images/posters/northwire.svg",
+      "director": "Sigrid Holm",
+      "country": "Norway",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Documentary",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Lars Holm",
+          "role": "Operator"
+        },
+        {
+          "name": "Anya Petrova",
+          "role": "Operator"
+        },
+        {
+          "name": "Cam Reed",
+          "role": "Director"
+        },
+        {
+          "name": "Static",
+          "role": "The Grid"
+        }
+      ],
+      "links": [
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+          "fileSize": "1.7 GB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "2100p",
+          "language": "Norsk",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "fileSize": "1.0 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "fileSize": "1.8 GB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "iron-orchard",
+      "title": "Iron Orchard",
+      "tagline": "The harvest came back wrong.",
+      "synopsis": "After a survey drone crashes in a family orchard, the trees begin growing fruit of rusted iron. Neighbors want it cut down. A corporation wants the seed. And the orchard’s private server starts broadcasting a harvest schedule for a crop that is not fruit.",
+      "year": 2024,
+      "runtimeMinutes": 98,
+      "contentRating": "R",
+      "score": 7.4,
+      "posterUrl": "images/posters/iron-orchard.jpg",
+      "backdropUrl": "images/posters/iron-orchard.jpg",
+      "director": "Jonah Pike",
+      "country": "United States",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "cast": [
+        {
+          "name": "Ellen Marsh",
+          "role": "Grower"
+        },
+        {
+          "name": "Cal Marsh",
+          "role": "Son"
+        },
+        {
+          "name": "Dr. Pell",
+          "role": "Surveyor"
+        },
+        {
+          "name": "Sheriff Boone",
+          "role": "Sheriff"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+          "fileSize": "980 MB",
+          "server": {
+            "name": "Nova Prime",
+            "code": "nova",
+            "region": "US-East",
+            "status": "online",
+            "latencyMs": 18,
+            "accent": "#7c3aed"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "fileSize": "1.7 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+          "fileSize": "510 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "elephants-dream",
+      "title": "Elephants Dream",
+      "tagline": "The first open movie.",
+      "synopsis": "Two characters wander a typewriter-ruled machine world in the original Blender Open Movie. Historic, strange, and still the best way to see how DGN’s servers disagree about a single reel.",
+      "year": 2006,
+      "runtimeMinutes": 11,
+      "contentRating": "PG",
+      "score": 7.2,
+      "posterUrl": "images/posters/elephants.svg",
+      "backdropUrl": "images/posters/elephants.svg",
+      "director": "Bassam Kurdali",
+      "country": "Netherlands",
+      "featured": false,
+      "trending": false,
+      "genres": [
+        "Animation",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Tygo Gernandt",
+          "role": "Proog"
+        },
+        {
+          "name": "Cas Jansen",
+          "role": "Emo"
+        }
+      ],
+      "links": [
+        {
+          "quality": "2100p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "380 MB",
+          "server": {
+            "name": "Helix EU",
+            "code": "helix",
+            "region": "Frankfurt",
+            "status": "online",
+            "latencyMs": 42,
+            "accent": "#a855f7"
+          }
+        },
+        {
+          "quality": "1080p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Atlas APAC",
+            "code": "atlas",
+            "region": "Singapore",
+            "status": "online",
+            "latencyMs": 68,
+            "accent": "#5b21b6"
+          }
+        },
+        {
+          "quality": "720p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "1.1 GB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "480p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "360p",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "420 MB",
+          "server": {
+            "name": "Nightbird",
+            "code": "nightbird",
+            "region": "São Paulo",
+            "status": "online",
+            "latencyMs": 89,
+            "accent": "#9333ea"
+          }
+        },
+        {
+          "quality": "4K",
+          "language": "English",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "fileSize": "700 MB",
+          "server": {
+            "name": "Archive Mirror",
+            "code": "archive",
+            "region": "Amsterdam",
+            "status": "degraded",
+            "latencyMs": 118,
+            "accent": "#8b7bb8"
+          }
+        }
+      ]
+    }
+  ]
+};
