@@ -77,6 +77,20 @@
     return at === -1 ? QUALITIES.length : at;
   }
 
+  /* Works whether posters live in images/posters/ or at the site root. */
+  function img(url, attrs) {
+    const base = String(url || "").split("/").pop();
+    return (
+      '<img src="' +
+      esc(url) +
+      '" ' +
+      (attrs || "") +
+      ' onerror="this.onerror=null;this.src=&quot;' +
+      esc(base) +
+      '&quot;" />'
+    );
+  }
+
   function hasQuality(movie, quality) {
     return movie.links.some(function (link) {
       return link.quality === quality;
@@ -100,11 +114,7 @@
       '<a class="card" href="#/movie/' +
       esc(movie.slug) +
       '">' +
-      '<img src="' +
-      esc(movie.posterUrl) +
-      '" alt="' +
-      esc(movie.title) +
-      '" loading="lazy" />' +
+      img(movie.posterUrl, 'alt="' + esc(movie.title) + '" loading="lazy"') +
       '<div class="badges"><span class="badge lime">' +
       esc(bestQuality(movie)) +
       '</span><span class="badge">' +
@@ -146,9 +156,9 @@
       .join("")
       .toUpperCase();
     return (
-      '<a class="provider" href="' +
-      esc(service.url) +
-      '" target="_blank" rel="noreferrer">' +
+      '<a class="provider" href="#/provider/' +
+      esc(service.slug) +
+      '">' +
       '<div class="dot" style="background:' +
       esc(service.accent) +
       '">' +
@@ -169,9 +179,7 @@
           '<div class="hero-slide' +
           (index === slide ? " on" : "") +
           '">' +
-          '<img class="hero-bg" src="' +
-          esc(movie.backdropUrl) +
-          '" alt="" />' +
+          img(movie.backdropUrl, 'class="hero-bg" alt=""') +
           '<div class="hero-scrim"></div>' +
           '<div class="hero-body"><div>' +
           '<span class="tag-pill">▶ Featured · ' +
@@ -392,14 +400,11 @@
 
     return (
       '<section class="detail-hero">' +
-      '<img class="hero-bg" src="' +
-      esc(movie.backdropUrl) +
-      '" alt="" /><div class="hero-scrim"></div>' +
-      '<div class="detail-inner"><img class="poster" src="' +
-      esc(movie.posterUrl) +
-      '" alt="' +
-      esc(movie.title) +
-      ' poster" /><div>' +
+      img(movie.backdropUrl, 'class="hero-bg" alt=""') +
+      '<div class="hero-scrim"></div>' +
+      '<div class="detail-inner">' +
+      img(movie.posterUrl, 'class="poster" alt="' + esc(movie.title) + ' poster"') +
+      "<div>" +
       '<span class="tag-pill">' +
       esc(movie.genres.join(" · ")) +
       "</span>" +
@@ -551,6 +556,89 @@
     );
   }
 
+  function providerPage(slug) {
+    const service = DATA.services.filter(function (item) {
+      return item.slug === slug;
+    })[0];
+    if (!service)
+      return '<p class="empty">Platform not found. <a href="#/services" style="color:#95ff50">All platforms</a></p>';
+
+    const initials = service.name
+      .replace(/^The\s+/i, "")
+      .split(/[\s+]+/)
+      .slice(0, 2)
+      .map(function (word) {
+        return word[0];
+      })
+      .join("")
+      .toUpperCase();
+
+    const top = DATA.movies.slice().sort(function (a, b) {
+      return b.score - a.score;
+    });
+    const fresh = DATA.movies.slice().sort(function (a, b) {
+      return b.year - a.year;
+    });
+    const ultra = DATA.movies.filter(function (movie) {
+      return hasQuality(movie, "4K");
+    });
+
+    return (
+      '<section class="provider-hero" style="--brand:' +
+      esc(service.accent) +
+      '"><div class="provider-hero-bg"></div>' +
+      '<div class="provider-hero-body">' +
+      '<div class="provider-logo" style="background:' +
+      esc(service.accent) +
+      '">' +
+      esc(initials) +
+      "</div><div>" +
+      '<span class="tag-pill">' +
+      esc(service.category) +
+      " platform</span>" +
+      "<h1>" +
+      esc(service.name) +
+      '</h1><p class="tagline">' +
+      esc(service.tagline) +
+      '</p><div class="btn-row">' +
+      '<a class="btn btn-accent" href="' +
+      esc(service.url) +
+      '" target="_blank" rel="noreferrer">Open ' +
+      esc(service.name) +
+      " ↗</a>" +
+      '<a class="btn btn-glass" href="#/services">All platforms</a>' +
+      '<a class="btn btn-glass" href="#/catalog">Browse catalog</a>' +
+      "</div></div></div></section>" +
+
+      '<section class="section"><div class="section-head"><h2>Why ' +
+      esc(service.name) +
+      '</h2></div><div class="filter-bar" style="margin:0">' +
+      '<div style="flex:1;min-width:180px"><strong>Plan</strong><p class="muted" style="margin:.25rem 0 0">' +
+      esc(service.category) +
+      "</p></div>" +
+      '<div style="flex:1;min-width:180px"><strong>Best for</strong><p class="muted" style="margin:.25rem 0 0">' +
+      esc(service.tagline) +
+      "</p></div>" +
+      '<div style="flex:1;min-width:180px"><strong>On DGN</strong><p class="muted" style="margin:.25rem 0 0">' +
+      DATA.movies.length +
+      " titles · 4K to 360p · " +
+      DATA.services.length +
+      " platform mirrors</p></div>" +
+      "</div></section>" +
+
+      row("Top rated on DGN", top.slice(0, 12), "#/catalog") +
+      row("New on DGN", fresh.slice(0, 12), "#/catalog") +
+      row("In 4K Ultra HD", ultra.slice(0, 12), "#/catalog") +
+
+      '<section class="section"><div class="section-head"><h2>Full catalog</h2>' +
+      '<span class="muted">' +
+      DATA.movies.length +
+      ' titles</span></div><div class="grid">' +
+      DATA.movies.map(card).join("") +
+      "</div></section>"
+    );
+  }
+
   function servicesPage() {
     return (
       '<section class="section" style="margin-top:2.25rem">' +
@@ -583,6 +671,9 @@
     } else if (hash === "#/catalog") {
       html = catalogPage();
       route = "/catalog";
+    } else if (hash.indexOf("#/provider/") === 0) {
+      html = providerPage(hash.slice("#/provider/".length));
+      route = "/services";
     } else if (hash === "#/services") {
       html = servicesPage();
       route = "/services";
